@@ -29,13 +29,17 @@ node scripts/fetch-official.js
 
 把本仓库推到 GitHub 后：
 
-1. **开启 Pages**：仓库 `Settings → Pages → Build and deployment → Source: Deploy from a branch → 选 main 分支、/ (root)`。几分钟后站点出现在 `https://<你的用户名>.github.io/<仓库名>/`。
-2. **设置邮件密钥**：仓库 `Settings → Secrets and variables → Actions → New repository secret`，名称 `SMTP_PASS`，值填你的 **QQ 邮箱 SMTP 授权码**。
+1. **设置邮件密钥**：仓库 `Settings → Secrets and variables → Actions → New repository secret`，名称 `SMTP_PASS`，值填你的 **QQ 邮箱 SMTP 授权码**。
    > 授权码 ≠ 邮箱密码。获取：QQ邮箱网页版 → 设置 → 账户 → 开启「POP3/SMTP服务」→ 生成授权码。
-3. **就这些**。GitHub Actions 会每天北京时间 20:00 自动：刷新官方数据并提交（Pages 自动重建）、向 `951038180@qq.com` 发送 5 注双色球 + 5 注大乐透。
+2. **就这些**。GitHub Actions 会每天北京时间 20:00 自动向 `951038180@qq.com` 发送 5 注双色球 + 5 注大乐透。
 
 > 发件/收件地址写在 `.github/workflows/daily.yml` 的 `env` 里，如需改收件人直接改那一行即可。
 > 注意：GitHub 会在仓库 60 天无活动后暂停定时任务，届时随便推一次 commit 即可恢复。
+
+### 两个限制说明
+
+- **网站在线托管（Pages）**：免费计划的 GitHub Pages 只支持**公开仓库**。若你想让网站有个在线地址（`https://<用户名>.github.io/<仓库名>/`），把仓库改成 Public 后到 `Settings → Pages` 开启即可（本项目代码不含任何密钥，公开是安全的）。私有仓库则无法用免费 Pages，网站仍可在本地 `node server.js` 查看。
+- **云端数据刷新**：`fetch-official.js` 依赖中彩网/500彩票，仅国内 IP 可访问，GitHub 境外服务器会被反爬（403）。因此**开奖数据的每日刷新不在云端进行**，交给本机的定时任务；而**机选邮件为纯随机、不依赖开奖数据**，云端可正常发送。
 
 ## 文件结构
 
