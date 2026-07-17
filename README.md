@@ -25,6 +25,24 @@ node scripts/fetch-official.js
 - 本地：`node scripts/send-picks.js`（需先在 `scripts/mail-config.json` 填好 QQ 邮箱 SMTP 授权码）。
 - 云端：见下方「部署到 GitHub」。
 
+## 自动开奖核对 + 中奖提醒
+
+推送的号码会被**保存到仓库根目录的 `picks-history.json`**；之后每天自动去核对是否中奖：
+
+- 发送推荐邮件后，`send-picks.js` 会把当天 5 注双色球 + 5 注大乐透追加进 `picks-history.json`（`checked:false`）。
+- 每天北京时间 **23:30**，`check-wins.js` 拉取最新开奖号码，为每条未核对记录匹配「推荐日之后的首次开奖」，逐注判定中奖等级；
+  - **只要有任一注中奖，就发一封中奖提醒邮件**（写明彩种、期号、开奖号、命中数与等级）；
+  - 核对完成的记录标记 `checked:true`，结果写回 `picks-history.json` 并提交回仓库；
+  - 若对应期次尚未开奖，则保留记录、下次继续核对。
+- 开奖数据源为 `gudaoxuri/lottery_history`（`raw.githubusercontent.com`），GitHub Actions 境外服务器可稳定访问（中彩网/500 会 403）。
+
+```bash
+# 本地手动核对一次
+node scripts/check-wins.js
+# 全链路自测（不发邮件、不改存储）
+node scripts/test-wins.js
+```
+
 ## 部署到 GitHub（电脑关机也能收推送）
 
 把本仓库推到 GitHub 后：
@@ -48,12 +66,20 @@ index.html          # 前端页面
 app.js / styles.css # 前端逻辑与样式
 data.js             # 开奖数据（由 fetch-official.js 生成，真实号码）
 server.js           # 本地静态服务 + 实时代理（仅本地用）
+picks-history.json  # 每日推荐号码 + 开奖核对结果（云端 Actions 自动维护）
 scripts/
   fetch-lib.js      # 官方数据抓取库（中彩网 / 500）
   fetch-official.js # 重新生成 data.js
   gen-picks.js      # 机选号码生成器
-  send-picks.js     # SMTP 发送推送邮件（支持环境变量 Secrets）
-.github/workflows/daily.yml  # 每日自动任务
+  prize.js          # 中奖等级判定（与前端 app.js 一致）
+  mailer.js         # 共享 SMTP 配置读取与发信
+  picks-store.js    # picks-history.json 读写
+  send-picks.js     # 发送推送邮件 + 保存推荐号码
+  results-lib.js    # 云端可访问的开奖数据源
+  check-wins.js     # 开奖核对 + 中奖发邮件
+  test-wins.js      # 全链路自测
+.github/workflows/daily.yml       # 每日推送 + 保存号码（北京 20:00）
+.github/workflows/check-wins.yml  # 每日开奖核对 + 中奖提醒（北京 23:30）
 ```
 
 ## 理性购彩
