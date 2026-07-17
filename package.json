@@ -1,0 +1,16 @@
+{
+  "name": "lottery-helper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "开运·彩票助手 - 双色球/大乐透 开奖查询、中奖核对、智能选号，每日机选号码邮件推送",
+  "scripts": {
+    "fetch": "node scripts/fetch-official.js",
+    "send": "node scripts/send-picks.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,52 @@
+name: 每日彩票推送与数据刷新
+
+# 触发：每天北京时间 20:00（UTC 12:00）自动运行；也可在 Actions 页面手动触发
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch: {}
+
+# 需要写权限，用于把刷新后的 data.js 提交回仓库（Pages 自动重建）
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    # 发件/收件地址写死在此（非敏感）；只有 SMTP 授权码来自仓库 Secrets
+    env:
+      SMTP_HOST: smtp.qq.com
+      SMTP_PORT: '465'
+      SMTP_USER: '2584958160@qq.com'
+      SMTP_FROM: '2584958160@qq.com'
+      SMTP_TO: '951038180@qq.com'
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 安装依赖
+        run: npm install
+
+      - name: 刷新官方开奖数据（失败不影响发邮件）
+        continue-on-error: true
+        run: node scripts/fetch-official.js
+
+      - name: 发送机选号码邮件
+        run: node scripts/send-picks.js
+
+      - name: 提交刷新后的数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data.js)" ]; then
+            git add data.js
+            git commit -m "chore: 每日自动刷新开奖数据"
+            git push
+          else
+            echo "data.js 无变化，跳过提交"
+          fi

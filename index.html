@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>开运 · 彩票助手 — 开奖查询与智能选号</title>
+  <meta name="description" content="双色球 / 大乐透 官方真实开奖查询、历史走势与统计分析、智能选号工具。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="banner" id="banner">
+    📡 <b>数据来源</b>：双色球来自中彩网官方接口，大乐透来自 500彩票（体彩网镜像），均为<b>官方真实开奖记录</b>。彩票开奖完全随机，本工具仅供娱乐参考，请理性购彩、量力而行。
+    <button class="close" id="bannerClose" title="关闭">×</button>
+  </div>
+
+  <div class="wrap">
+    <header class="brand">
+      <div class="logo">
+        <div class="mark">运</div>
+        <div>
+          <h1>开运<span class="accent">·</span>彩票助手</h1>
+          <div class="sub">开奖查询 · 历史走势 · 统计分析 · 智能选号 · 中奖核对</div>
+        </div>
+      </div>
+      <div class="org" id="orgInfo"></div>
+    </header>
+
+    <div class="type-switch" id="typeSwitch">
+      <button data-type="ssq" class="active">双色球<span class="en">SSQ</span></button>
+      <button data-type="dlt">大乐透<span class="en">DLT</span></button>
+    </div>
+    <div class="live-stamp" id="liveStamp"></div>
+
+    <section class="card hero" id="hero"></section>
+
+    <nav class="tabs" id="tabs">
+      <button data-tab="query" class="active">开奖查询</button>
+      <button data-tab="stats">统计分析</button>
+      <button data-tab="predict">智能选号</button>
+      <button data-tab="check">中奖核对</button>
+    </nav>
+
+    <section class="panel active" id="panel-query">
+      <div class="panel-head">
+        <h2>开奖查询</h2>
+        <span class="hint" id="queryHint"></span>
+      </div>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="输入期号（如 2026077）或日期（如 2026-07）进行筛选" />
+        <select id="searchField">
+          <option value="all">全部字段</option>
+          <option value="issue">按期号</option>
+          <option value="date">按日期</option>
+        </select>
+      </div>
+      <div class="result-list" id="resultList"></div>
+    </section>
+
+    <section class="panel" id="panel-stats">
+      <div class="panel-head">
+        <h2>统计分析</h2>
+        <span class="hint">基于全部官方历史期数</span>
+      </div>
+      <div class="stat-grid">
+        <div class="card stat-card">
+          <h3 id="hotTitle">热号（高频）</h3>
+          <div class="desc">出现次数最多的号码</div>
+          <div class="chips" id="hotChips"></div>
+        </div>
+        <div class="card stat-card">
+          <h3 id="coldTitle">冷号（长期遗漏）</h3>
+          <div class="desc">距离上次出现间隔最久的号码</div>
+          <div class="chips" id="coldChips"></div>
+        </div>
+        <div class="card stat-card" style="grid-column: 1 / -1;">
+          <h3 id="freqTitle">号码出现频率</h3>
+          <div class="desc">各号码在历史中的出现次数（红球/前区 与 蓝球/后区 分别统计）</div>
+          <div class="freq" id="freqRed"></div>
+          <div style="height:14px"></div>
+          <div class="freq" id="freqBlue"></div>
+        </div>
+        <div class="card stat-card">
+          <h3>红球/前区 和值走势</h3>
+          <div class="desc">近 60 期所选号码之和的变化</div>
+          <svg class="trend" id="trendSvg" viewBox="0 0 600 180" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="card stat-card">
+          <h3>整体概览</h3>
+          <div class="desc">基于全部历史期的统计指标</div>
+          <div class="summary" id="summary"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-predict">
+      <div class="panel-head">
+        <h2>智能选号</h2>
+        <span class="hint">基于历史统计的参考组合 · 娱乐用途</span>
+      </div>
+      <div class="predict-grid">
+        <div class="card strategy">
+          <h3 style="font-family:var(--serif);margin:0 0 4px;">选号策略</h3>
+          <div class="desc" style="font-size:12.5px;color:var(--faint);margin-bottom:14px;">不同策略仅改变选号偏好，不提升中奖概率。</div>
+          <div class="mode-switch" id="pickModeSwitch">
+            <button data-type="ssq" class="active">福彩·双色球<span class="org">6+1</span></button>
+            <button data-type="dlt">体彩·大乐透<span class="org">5+2</span></button>
+          </div>
+          <div class="opts" id="strategyOpts">
+            <button data-strategy="random" class="active">机选随机</button>
+            <button data-strategy="hot">热号优先</button>
+            <button data-strategy="cold">冷号优先</button>
+            <button data-strategy="balance">冷热均衡</button>
+          </div>
+          <div class="row2">
+            <label style="font-size:13px;color:var(--muted);">生成注数</label>
+            <input type="number" id="pickCount" value="5" min="1" max="10" />
+            <button class="btn" id="pickBtn">生成选号</button>
+            <button class="btn ghost" id="pickReset">重置</button>
+          </div>
+          <div class="disclaimer">
+            <b>理性购彩：</b>彩票开奖完全随机，任何历史走势、频率或策略都<b>不能预测</b>未来结果，也无法提高中奖概率。本功能仅作娱乐参考，请勿据此大额投注。
+          </div>
+        </div>
+        <div class="card pick-result">
+          <h3>选号结果</h3>
+          <div class="pick-mode-label" id="pickModeLabel"></div>
+          <div class="pick-list" id="pickList">
+            <div class="empty">点击「生成选号」获取参考组合</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-check">
+      <div class="panel-head">
+        <h2>中奖核对</h2>
+        <span class="hint" id="checkHint"></span>
+      </div>
+      <div class="card check-card">
+        <div class="desc" style="margin-bottom:14px;">输入你购买的一注或多注号码，系统将对照<b>全部官方历史开奖</b>，按玩法规则判定中奖等级与单注奖金。</div>
+        <label class="check-label" id="checkRedLabel"></label>
+        <textarea id="checkRedInput" class="check-textarea" rows="3"
+          placeholder="每行一注，前区/红球与后区/蓝球用空格或 | 分隔，例如：&#10;1,4,5,14,18,25 4&#10;3,7,12,19,23,31 8"></textarea>
+        <div class="row2" style="margin-top:14px;">
+          <button class="btn" id="checkBtn">开始核对</button>
+          <button class="btn ghost" id="checkClear">清空</button>
+          <span class="err" id="checkErr"></span>
+        </div>
+        <div class="disclaimer" style="margin-top:14px;">
+          <b>规则说明：</b>中奖等级按官方玩法判定；一等奖等奖级为浮动奖，单注奖金以该期实际派奖为准（数据来源见上方横幅）。本功能仅供娱乐参考。
+        </div>
+      </div>
+      <div id="checkResult"></div>
+    </section>
+
+    <footer>
+      <div class="warn">⚠️ 本网站数据为官方开奖记录的转引，最终以 <b>中国福利彩票</b> / <b>中国体育彩票</b> 官方渠道公布结果为准。</div>
+      <div>彩票为随机概率游戏，请理性购彩、量力而行，未满 18 周岁禁止购彩。</div>
+      <div>© 2026 开运·彩票助手 · 仅供学习与技术演示</div>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
