@@ -47,11 +47,19 @@ node scripts/test-wins.js
 
 把本仓库推到 GitHub 后：
 
-1. **设置邮件密钥**：仓库 `Settings → Secrets and variables → Actions → New repository secret`，名称 `SMTP_PASS`，值填你的 **QQ 邮箱 SMTP 授权码**。
+1. **设置邮件密钥**：仓库 `Settings → Secrets and variables → Actions → New repository secret`，把以下 6 个全部设为 Secrets（值里不要带引号）：
+   | 名称 | 说明 | 示例 |
+   |---|---|---|
+   | `SMTP_HOST` | SMTP 服务器 | `smtp.qq.com` |
+   | `SMTP_PORT` | 端口 | `465` |
+   | `SMTP_USER` | 发件/登录账号 | `你的QQ号@qq.com` |
+   | `SMTP_FROM` | 发件人（同 USER） | `你的QQ号@qq.com` |
+   | `SMTP_TO` | 收件人 | `951038180@qq.com` |
+   | `SMTP_PASS` | QQ 邮箱 SMTP 授权码 | （见下） |
    > 授权码 ≠ 邮箱密码。获取：QQ邮箱网页版 → 设置 → 账户 → 开启「POP3/SMTP服务」→ 生成授权码。
-2. **就这些**。GitHub Actions 会每天北京时间 20:00 自动向 `951038180@qq.com` 发送 5 注双色球 + 5 注大乐透。
+2. **就这些**。GitHub Actions 会每天北京时间 20:00 自动向 Secrets 中设置的收件人发送 5 注双色球 + 5 注大乐透。
 
-> 发件/收件地址写在 `.github/workflows/daily.yml` 的 `env` 里，如需改收件人直接改那一行即可。
+> 邮箱地址、授权码等敏感信息全部存在 Secrets 中，工作流文件只引用 `${{ secrets.* }}`，仓库公开也不会泄露你的邮箱。
 > 注意：GitHub 会在仓库 60 天无活动后暂停定时任务，届时随便推一次 commit 即可恢复。
 
 ### 两个限制说明

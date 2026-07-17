@@ -13,13 +13,13 @@ permissions:
 jobs:
   send:
     runs-on: ubuntu-latest
-    # 发件/收件地址写死在此（非敏感）；只有 SMTP 授权码来自仓库 Secrets
+    # 所有邮箱相关配置均来自仓库 Secrets（Settings → Secrets and variables → Actions）
     env:
-      SMTP_HOST: smtp.qq.com
-      SMTP_PORT: '465'
-      SMTP_USER: '2584958160@qq.com'
-      SMTP_FROM: '2584958160@qq.com'
-      SMTP_TO: '951038180@qq.com'
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_FROM: ${{ secrets.SMTP_FROM }}
+      SMTP_TO: ${{ secrets.SMTP_TO }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
     steps:
       - uses: actions/checkout@v4

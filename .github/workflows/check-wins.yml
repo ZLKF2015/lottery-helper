@@ -15,11 +15,11 @@ jobs:
   check:
     runs-on: ubuntu-latest
     env:
-      SMTP_HOST: smtp.qq.com
-      SMTP_PORT: '465'
-      SMTP_USER: '2584958160@qq.com'
-      SMTP_FROM: '2584958160@qq.com'
-      SMTP_TO: '951038180@qq.com'
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_FROM: ${{ secrets.SMTP_FROM }}
+      SMTP_TO: ${{ secrets.SMTP_TO }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
     steps:
       - uses: actions/checkout@v4
