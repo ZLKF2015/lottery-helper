@@ -6,6 +6,10 @@ on:
     - cron: '0 12 * * *'
   workflow_dispatch: {}
 
+# 允许把保存的推荐号码（picks-history.json）提交回仓库
+permissions:
+  contents: write
+
 jobs:
   send:
     runs-on: ubuntu-latest
@@ -28,8 +32,20 @@ jobs:
       - name: 安装依赖
         run: npm install
 
-      - name: 发送机选号码邮件（5 注双色球 + 5 注大乐透）
+      - name: 发送机选号码邮件并保存推荐号码（5 注双色球 + 5 注大乐透）
         run: node scripts/send-picks.js
+
+      - name: 提交保存的推荐号码
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add picks-history.json
+          if git diff --cached --quiet; then
+            echo "没有需要提交的推荐号码变更。"
+          else
+            git commit -m "chore: 保存每日推荐号码 [skip ci]"
+            git push
+          fi
 
 # 说明：官方开奖数据刷新（fetch-official.js）依赖中彩网/500彩票，仅国内 IP 可访问，
 # GitHub 境外服务器会被反爬（403），故不在云端刷新。数据刷新交给本机的定时任务处理。

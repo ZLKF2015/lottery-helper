@@ -1,0 +1,50 @@
+name: 每日开奖核对与中奖提醒
+
+# 触发：每天北京时间 23:30（UTC 15:30）核对当天开奖；也可在 Actions 页面手动触发
+# 双色球开奖：周二/四/日 21:15；大乐透开奖：周一/三/六 20:30。23:30 已出结果。
+on:
+  schedule:
+    - cron: '30 15 * * *'
+  workflow_dispatch: {}
+
+# 允许把核对结果（picks-history.json）提交回仓库
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      SMTP_HOST: smtp.qq.com
+      SMTP_PORT: '465'
+      SMTP_USER: '2584958160@qq.com'
+      SMTP_FROM: '2584958160@qq.com'
+      SMTP_TO: '951038180@qq.com'
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 安装依赖
+        run: npm install
+
+      - name: 核对推荐号码是否中奖（中奖则发邮件提醒）
+        run: node scripts/check-wins.js
+
+      - name: 提交核对结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add picks-history.json
+          if git diff --cached --quiet; then
+            echo "没有需要提交的核对结果变更。"
+          else
+            git commit -m "chore: 更新开奖核对结果 [skip ci]"
+            git push
+          fi
+
+# 开奖数据源：gudaoxuri/lottery_history（raw.githubusercontent.com），GitHub Actions 境外服务器可稳定访问。
