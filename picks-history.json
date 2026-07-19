@@ -139,7 +139,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26080",
+          "drawDate": "2026-07-18",
+          "red": [
+            5,
+            10,
+            15,
+            21,
+            23
+          ],
+          "blue": [
+            7,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  7,
+                  13,
+                  21,
+                  26,
+                  34
+                ],
+                "blue": [
+                  4,
+                  7
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-18-mrp4vr86",
@@ -280,7 +318,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26080",
+          "drawDate": "2026-07-18",
+          "red": [
+            5,
+            10,
+            15,
+            21,
+            23
+          ],
+          "blue": [
+            7,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  12,
+                  14,
+                  15,
+                  22,
+                  25
+                ],
+                "blue": [
+                  1,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-18-mrqewhus",
@@ -421,7 +497,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26080",
+          "drawDate": "2026-07-18",
+          "red": [
+            5,
+            10,
+            15,
+            21,
+            23
+          ],
+          "blue": [
+            7,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  16,
+                  19,
+                  23,
+                  30,
+                  31
+                ],
+                "blue": [
+                  3,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-19-mrrufwl5",
