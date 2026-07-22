@@ -939,7 +939,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26081",
@@ -977,6 +977,22 @@
               }
             }
           ]
+        },
+        "ssq": {
+          "issue": "26083",
+          "drawDate": "2026-07-21",
+          "red": [
+            7,
+            14,
+            15,
+            23,
+            28,
+            33
+          ],
+          "blue": [
+            3
+          ],
+          "wins": []
         }
       }
     },
@@ -1119,7 +1135,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26083",
+          "drawDate": "2026-07-21",
+          "red": [
+            7,
+            14,
+            15,
+            23,
+            28,
+            33
+          ],
+          "blue": [
+            3
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  3,
+                  10,
+                  16,
+                  24,
+                  28,
+                  32
+                ],
+                "blue": [
+                  3
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-22-mrw5xsu9",
