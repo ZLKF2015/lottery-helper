@@ -1524,7 +1524,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26084",
@@ -1541,6 +1541,43 @@
             5
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26083",
+          "drawDate": "2026-07-25",
+          "red": [
+            14,
+            15,
+            16,
+            23,
+            26
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  26,
+                  27,
+                  29,
+                  33
+                ],
+                "blue": [
+                  9,
+                  10
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -1683,7 +1720,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26083",
+          "drawDate": "2026-07-25",
+          "red": [
+            14,
+            15,
+            16,
+            23,
+            26
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  9,
+                  15,
+                  18,
+                  28,
+                  29
+                ],
+                "blue": [
+                  1,
+                  9
+                ]
+              }
+            },
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  4,
+                  14,
+                  17,
+                  25,
+                  34
+                ],
+                "blue": [
+                  4,
+                  7
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-25-ms0fh4b6",
@@ -1824,7 +1919,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26083",
+          "drawDate": "2026-07-25",
+          "red": [
+            14,
+            15,
+            16,
+            23,
+            26
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-07-26-ms1unq1b",
