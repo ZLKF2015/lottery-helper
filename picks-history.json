@@ -2498,7 +2498,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26086",
@@ -2515,6 +2515,43 @@
             5
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26085",
+          "drawDate": "2026-07-29",
+          "red": [
+            3,
+            4,
+            14,
+            28,
+            31
+          ],
+          "blue": [
+            5,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  10,
+                  16,
+                  19,
+                  28,
+                  31
+                ],
+                "blue": [
+                  2,
+                  5
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -2657,7 +2694,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26085",
+          "drawDate": "2026-07-29",
+          "red": [
+            3,
+            4,
+            14,
+            28,
+            31
+          ],
+          "blue": [
+            5,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  8,
+                  12,
+                  28,
+                  34
+                ],
+                "blue": [
+                  5,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-30-ms7lsg1r",
