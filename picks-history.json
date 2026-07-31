@@ -2693,7 +2693,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26085",
@@ -2731,6 +2731,22 @@
               }
             }
           ]
+        },
+        "ssq": {
+          "issue": "26087",
+          "drawDate": "2026-07-30",
+          "red": [
+            4,
+            6,
+            10,
+            18,
+            23,
+            31
+          ],
+          "blue": [
+            11
+          ],
+          "wins": []
         }
       }
     },
@@ -2873,7 +2889,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26087",
+          "drawDate": "2026-07-30",
+          "red": [
+            4,
+            6,
+            10,
+            18,
+            23,
+            31
+          ],
+          "blue": [
+            11
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 5,
+              "name": "五等奖",
+              "redMatch": 4,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  4,
+                  6,
+                  7,
+                  8,
+                  10,
+                  31
+                ],
+                "blue": [
+                  5
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-07-31-ms91bthf",
