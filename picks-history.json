@@ -2888,7 +2888,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26087",
@@ -2926,6 +2926,22 @@
               }
             }
           ]
+        },
+        "dlt": {
+          "issue": "26086",
+          "drawDate": "2026-08-01",
+          "red": [
+            10,
+            11,
+            18,
+            22,
+            35
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
         }
       }
     },
@@ -3068,7 +3084,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26086",
+          "drawDate": "2026-08-01",
+          "red": [
+            10,
+            11,
+            18,
+            22,
+            35
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-01-msafa1ql",
@@ -3209,7 +3242,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26086",
+          "drawDate": "2026-08-01",
+          "red": [
+            10,
+            11,
+            18,
+            22,
+            35
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-02-msbupzfi",
