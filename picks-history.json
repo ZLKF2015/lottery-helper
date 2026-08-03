@@ -3083,7 +3083,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26086",
@@ -3098,6 +3098,22 @@
           "blue": [
             6,
             12
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26088",
+          "drawDate": "2026-08-02",
+          "red": [
+            6,
+            7,
+            11,
+            18,
+            22,
+            33
+          ],
+          "blue": [
+            5
           ],
           "wins": []
         }
@@ -3241,7 +3257,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26086",
@@ -3258,6 +3274,43 @@
             12
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26088",
+          "drawDate": "2026-08-02",
+          "red": [
+            6,
+            7,
+            11,
+            18,
+            22,
+            33
+          ],
+          "blue": [
+            5
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 0,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  10,
+                  15,
+                  17,
+                  19,
+                  24
+                ],
+                "blue": [
+                  5
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -3400,7 +3453,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26088",
+          "drawDate": "2026-08-02",
+          "red": [
+            6,
+            7,
+            11,
+            18,
+            22,
+            33
+          ],
+          "blue": [
+            5
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-03-msdcre47",
