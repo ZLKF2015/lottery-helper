@@ -3452,7 +3452,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26088",
@@ -3467,6 +3467,22 @@
           ],
           "blue": [
             5
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26087",
+          "drawDate": "2026-08-03",
+          "red": [
+            5,
+            10,
+            16,
+            24,
+            27
+          ],
+          "blue": [
+            4,
+            10
           ],
           "wins": []
         }
@@ -3611,7 +3627,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26087",
+          "drawDate": "2026-08-03",
+          "red": [
+            5,
+            10,
+            16,
+            24,
+            27
+          ],
+          "blue": [
+            4,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  10,
+                  16,
+                  31,
+                  35
+                ],
+                "blue": [
+                  4,
+                  6
+                ]
+              }
+            },
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  7,
+                  13,
+                  14,
+                  18,
+                  24
+                ],
+                "blue": [
+                  2,
+                  10
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-04-mserc7w5",
