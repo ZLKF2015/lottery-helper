@@ -3862,7 +3862,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26089",
@@ -3877,6 +3877,22 @@
           ],
           "blue": [
             3
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26088",
+          "drawDate": "2026-08-05",
+          "red": [
+            3,
+            9,
+            11,
+            24,
+            27
+          ],
+          "blue": [
+            5,
+            11
           ],
           "wins": []
         }
@@ -4020,8 +4036,83 @@
           ]
         }
       ],
-      "checked": false,
-      "result": null
+      "checked": true,
+      "result": {
+        "ssq": {
+          "issue": "26090",
+          "drawDate": "2026-08-06",
+          "red": [
+            2,
+            4,
+            15,
+            23,
+            25,
+            27
+          ],
+          "blue": [
+            3
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 5,
+              "name": "五等奖",
+              "redMatch": 4,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  4,
+                  7,
+                  15,
+                  23,
+                  24,
+                  25
+                ],
+                "blue": [
+                  14
+                ]
+              }
+            }
+          ]
+        },
+        "dlt": {
+          "issue": "26088",
+          "drawDate": "2026-08-05",
+          "red": [
+            3,
+            9,
+            11,
+            24,
+            27
+          ],
+          "blue": [
+            5,
+            11
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  6,
+                  11,
+                  18,
+                  26
+                ],
+                "blue": [
+                  3,
+                  11
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-06-mshm2qac",
@@ -4162,7 +4253,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26090",
+          "drawDate": "2026-08-06",
+          "red": [
+            2,
+            4,
+            15,
+            23,
+            25,
+            27
+          ],
+          "blue": [
+            3
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-07-msiz1jqd",
