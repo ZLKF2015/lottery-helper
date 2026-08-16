@@ -5616,7 +5616,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26093",
@@ -5633,6 +5633,63 @@
             9
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26092",
+          "drawDate": "2026-08-15",
+          "red": [
+            12,
+            16,
+            19,
+            29,
+            33
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  12,
+                  15,
+                  28,
+                  30
+                ],
+                "blue": [
+                  6,
+                  9
+                ]
+              }
+            },
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  5,
+                  16,
+                  31,
+                  33
+                ],
+                "blue": [
+                  4,
+                  7
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -5775,7 +5832,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26092",
+          "drawDate": "2026-08-15",
+          "red": [
+            12,
+            16,
+            19,
+            29,
+            33
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  7,
+                  16,
+                  23,
+                  24,
+                  26
+                ],
+                "blue": [
+                  5,
+                  7
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-15-msudk2ge",
@@ -5916,7 +6011,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26092",
+          "drawDate": "2026-08-15",
+          "red": [
+            12,
+            16,
+            19,
+            29,
+            33
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  10,
+                  16,
+                  30,
+                  35
+                ],
+                "blue": [
+                  3,
+                  9
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 3,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  3,
+                  12,
+                  19,
+                  25,
+                  29
+                ],
+                "blue": [
+                  6,
+                  11
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-16-msvt1rdd",
