@@ -6846,7 +6846,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26094",
@@ -6861,6 +6861,22 @@
           "blue": [
             1,
             7
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26096",
+          "drawDate": "2026-08-20",
+          "red": [
+            1,
+            4,
+            16,
+            22,
+            26,
+            31
+          ],
+          "blue": [
+            4
           ],
           "wins": []
         }
@@ -7005,7 +7021,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26096",
+          "drawDate": "2026-08-20",
+          "red": [
+            1,
+            4,
+            16,
+            22,
+            26,
+            31
+          ],
+          "blue": [
+            4
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-21-mt2yklh9",
