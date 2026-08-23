@@ -7020,7 +7020,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26096",
@@ -7037,6 +7037,43 @@
             4
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26095",
+          "drawDate": "2026-08-22",
+          "red": [
+            4,
+            6,
+            8,
+            10,
+            14
+          ],
+          "blue": [
+            4,
+            5
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  8,
+                  9,
+                  19,
+                  35
+                ],
+                "blue": [
+                  4,
+                  7
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -7179,7 +7216,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26095",
+          "drawDate": "2026-08-22",
+          "red": [
+            4,
+            6,
+            8,
+            10,
+            14
+          ],
+          "blue": [
+            4,
+            5
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 7,
+              "name": "七等奖",
+              "redMatch": 1,
+              "blueMatch": 2,
+              "pick": {
+                "red": [
+                  10,
+                  11,
+                  13,
+                  19,
+                  34
+                ],
+                "blue": [
+                  4,
+                  5
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-22-mt4doqup",
@@ -7320,7 +7395,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26095",
+          "drawDate": "2026-08-22",
+          "red": [
+            4,
+            6,
+            8,
+            10,
+            14
+          ],
+          "blue": [
+            4,
+            5
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-23-mt5t62ws",
