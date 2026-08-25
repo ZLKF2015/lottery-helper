@@ -7584,7 +7584,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26097",
@@ -7599,6 +7599,22 @@
           ],
           "blue": [
             2
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26096",
+          "drawDate": "2026-08-24",
+          "red": [
+            8,
+            9,
+            10,
+            11,
+            25
+          ],
+          "blue": [
+            4,
+            12
           ],
           "wins": []
         }
@@ -7743,7 +7759,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26096",
+          "drawDate": "2026-08-24",
+          "red": [
+            8,
+            9,
+            10,
+            11,
+            25
+          ],
+          "blue": [
+            4,
+            12
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  14,
+                  15,
+                  25,
+                  27,
+                  28
+                ],
+                "blue": [
+                  9,
+                  12
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  8,
+                  22,
+                  29,
+                  31
+                ],
+                "blue": [
+                  4,
+                  6
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-25-mt8oa9oc",
