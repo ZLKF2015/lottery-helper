@@ -8168,7 +8168,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26097",
@@ -8185,6 +8185,63 @@
             9
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26099",
+          "drawDate": "2026-08-27",
+          "red": [
+            1,
+            12,
+            14,
+            18,
+            30,
+            31
+          ],
+          "blue": [
+            2
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 4,
+              "name": "四等奖",
+              "redMatch": 5,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  1,
+                  12,
+                  18,
+                  30,
+                  31,
+                  32
+                ],
+                "blue": [
+                  7
+                ]
+              }
+            },
+            {
+              "idx": 4,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  7,
+                  8,
+                  16,
+                  30,
+                  32
+                ],
+                "blue": [
+                  2
+                ]
+              }
+            }
+          ]
         }
       }
     },
