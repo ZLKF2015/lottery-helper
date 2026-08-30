@@ -8384,7 +8384,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26098",
+          "drawDate": "2026-08-29",
+          "red": [
+            7,
+            9,
+            18,
+            19,
+            21
+          ],
+          "blue": [
+            2,
+            9
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-08-29-mtdi8bpo",
@@ -8525,7 +8542,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26098",
+          "drawDate": "2026-08-29",
+          "red": [
+            7,
+            9,
+            18,
+            19,
+            21
+          ],
+          "blue": [
+            2,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 0,
+              "blueMatch": 2,
+              "pick": {
+                "red": [
+                  10,
+                  24,
+                  25,
+                  26,
+                  30
+                ],
+                "blue": [
+                  2,
+                  9
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  15,
+                  19,
+                  30,
+                  31,
+                  33
+                ],
+                "blue": [
+                  8,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-30-mtelsupx",
