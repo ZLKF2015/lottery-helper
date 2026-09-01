@@ -8383,7 +8383,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26098",
@@ -8400,6 +8400,63 @@
             9
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26100",
+          "drawDate": "2026-08-30",
+          "red": [
+            3,
+            4,
+            9,
+            13,
+            22,
+            31
+          ],
+          "blue": [
+            4
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 5,
+              "name": "五等奖",
+              "redMatch": 4,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  3,
+                  9,
+                  15,
+                  22,
+                  30,
+                  31
+                ],
+                "blue": [
+                  6
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  3,
+                  8,
+                  12,
+                  16,
+                  21
+                ],
+                "blue": [
+                  4
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -8541,7 +8598,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26098",
@@ -8599,6 +8656,22 @@
               }
             }
           ]
+        },
+        "ssq": {
+          "issue": "26100",
+          "drawDate": "2026-08-30",
+          "red": [
+            3,
+            4,
+            9,
+            13,
+            22,
+            31
+          ],
+          "blue": [
+            4
+          ],
+          "wins": []
         }
       }
     },
@@ -8740,8 +8813,82 @@
           ]
         }
       ],
-      "checked": false,
-      "result": null
+      "checked": true,
+      "result": {
+        "ssq": {
+          "issue": "26100",
+          "drawDate": "2026-08-30",
+          "red": [
+            3,
+            4,
+            9,
+            13,
+            22,
+            31
+          ],
+          "blue": [
+            4
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26099",
+          "drawDate": "2026-08-31",
+          "red": [
+            2,
+            17,
+            20,
+            29,
+            33
+          ],
+          "blue": [
+            8,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  5,
+                  17,
+                  28,
+                  29
+                ],
+                "blue": [
+                  1,
+                  9
+                ]
+              }
+            },
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  23,
+                  26,
+                  29,
+                  32,
+                  33
+                ],
+                "blue": [
+                  2,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-08-31-mtg12e4w",
@@ -8882,7 +9029,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26099",
+          "drawDate": "2026-08-31",
+          "red": [
+            2,
+            17,
+            20,
+            29,
+            33
+          ],
+          "blue": [
+            8,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  25,
+                  26,
+                  32,
+                  34
+                ],
+                "blue": [
+                  5,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-01-mthlxi8n",
