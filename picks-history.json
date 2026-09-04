@@ -9418,7 +9418,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26100",
@@ -9472,6 +9472,43 @@
                 "blue": [
                   6,
                   8
+                ]
+              }
+            }
+          ]
+        },
+        "ssq": {
+          "issue": "26102",
+          "drawDate": "2026-09-03",
+          "red": [
+            3,
+            4,
+            10,
+            13,
+            16,
+            25
+          ],
+          "blue": [
+            9
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 0,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  15,
+                  17,
+                  21,
+                  26,
+                  29,
+                  30
+                ],
+                "blue": [
+                  9
                 ]
               }
             }
@@ -9618,7 +9655,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26102",
+          "drawDate": "2026-09-03",
+          "red": [
+            3,
+            4,
+            10,
+            13,
+            16,
+            25
+          ],
+          "blue": [
+            9
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  4,
+                  10,
+                  11,
+                  15,
+                  24,
+                  32
+                ],
+                "blue": [
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-04-mtlq9pix",
