@@ -9654,7 +9654,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26102",
@@ -9688,6 +9688,43 @@
                 ],
                 "blue": [
                   9
+                ]
+              }
+            }
+          ]
+        },
+        "dlt": {
+          "issue": "26101",
+          "drawDate": "2026-09-05",
+          "red": [
+            9,
+            11,
+            18,
+            26,
+            33
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 0,
+              "blueMatch": 2,
+              "pick": {
+                "red": [
+                  1,
+                  6,
+                  12,
+                  22,
+                  34
+                ],
+                "blue": [
+                  9,
+                  11
                 ]
               }
             }
@@ -9834,7 +9871,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26101",
+          "drawDate": "2026-09-05",
+          "red": [
+            9,
+            11,
+            18,
+            26,
+            33
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  9,
+                  12,
+                  17,
+                  31,
+                  34
+                ],
+                "blue": [
+                  1,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-05-mtn5jbpv",
@@ -9975,7 +10050,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26101",
+          "drawDate": "2026-09-05",
+          "red": [
+            9,
+            11,
+            18,
+            26,
+            33
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-05-mtoien3e",
@@ -10116,7 +10208,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26101",
+          "drawDate": "2026-09-05",
+          "red": [
+            9,
+            11,
+            18,
+            26,
+            33
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-06-mtpyla88",
