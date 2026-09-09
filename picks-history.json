@@ -10609,7 +10609,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26104",
+          "drawDate": "2026-09-08",
+          "red": [
+            11,
+            12,
+            13,
+            19,
+            20,
+            31
+          ],
+          "blue": [
+            3
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-09-mtsvxg9z",
