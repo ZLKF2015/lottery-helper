@@ -10608,7 +10608,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26104",
@@ -10625,6 +10625,43 @@
             3
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26103",
+          "drawDate": "2026-09-09",
+          "red": [
+            3,
+            16,
+            17,
+            32,
+            35
+          ],
+          "blue": [
+            2,
+            12
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 7,
+              "name": "七等奖",
+              "redMatch": 3,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  14,
+                  16,
+                  17,
+                  32,
+                  34
+                ],
+                "blue": [
+                  11,
+                  12
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -10767,7 +10804,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26103",
+          "drawDate": "2026-09-09",
+          "red": [
+            3,
+            16,
+            17,
+            32,
+            35
+          ],
+          "blue": [
+            2,
+            12
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  25,
+                  28,
+                  30,
+                  33,
+                  35
+                ],
+                "blue": [
+                  11,
+                  12
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-10-mtub8sr0",
