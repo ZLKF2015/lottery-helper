@@ -11798,7 +11798,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26105",
+          "drawDate": "2026-09-14",
+          "red": [
+            10,
+            14,
+            30,
+            33,
+            34
+          ],
+          "blue": [
+            9,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-15-mu1jszyg",
