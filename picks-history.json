@@ -11797,7 +11797,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26105",
@@ -11812,6 +11812,22 @@
           "blue": [
             9,
             12
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26107",
+          "drawDate": "2026-09-15",
+          "red": [
+            1,
+            5,
+            9,
+            17,
+            24,
+            33
+          ],
+          "blue": [
+            4
           ],
           "wins": []
         }
@@ -11956,7 +11972,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26107",
+          "drawDate": "2026-09-15",
+          "red": [
+            1,
+            5,
+            9,
+            17,
+            24,
+            33
+          ],
+          "blue": [
+            4
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  8,
+                  10,
+                  17,
+                  25,
+                  29
+                ],
+                "blue": [
+                  4
+                ]
+              }
+            },
+            {
+              "idx": 4,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 0,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  3,
+                  7,
+                  13,
+                  19,
+                  31,
+                  32
+                ],
+                "blue": [
+                  4
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-16-mu2wmkue",
