@@ -12381,7 +12381,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26108",
@@ -12398,6 +12398,43 @@
             16
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26107",
+          "drawDate": "2026-09-19",
+          "red": [
+            2,
+            5,
+            7,
+            14,
+            22
+          ],
+          "blue": [
+            4,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  6,
+                  10,
+                  13,
+                  17
+                ],
+                "blue": [
+                  4,
+                  12
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -12540,7 +12577,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26107",
+          "drawDate": "2026-09-19",
+          "red": [
+            2,
+            5,
+            7,
+            14,
+            22
+          ],
+          "blue": [
+            4,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  14,
+                  23,
+                  24,
+                  28
+                ],
+                "blue": [
+                  3,
+                  10
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  2,
+                  6,
+                  12,
+                  17
+                ],
+                "blue": [
+                  10,
+                  12
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-19-mu75tnba",
@@ -12681,7 +12776,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26107",
+          "drawDate": "2026-09-19",
+          "red": [
+            2,
+            5,
+            7,
+            14,
+            22
+          ],
+          "blue": [
+            4,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  14,
+                  15,
+                  29,
+                  30
+                ],
+                "blue": [
+                  4,
+                  12
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-19-mu8k7wzq",
@@ -12822,7 +12955,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26107",
+          "drawDate": "2026-09-19",
+          "red": [
+            2,
+            5,
+            7,
+            14,
+            22
+          ],
+          "blue": [
+            4,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  18,
+                  19,
+                  27,
+                  31
+                ],
+                "blue": [
+                  4,
+                  6
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-20-mu9zygdj",
