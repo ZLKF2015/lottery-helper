@@ -13376,7 +13376,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26110",
@@ -13393,6 +13393,43 @@
             14
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26109",
+          "drawDate": "2026-09-23",
+          "red": [
+            12,
+            14,
+            16,
+            27,
+            34
+          ],
+          "blue": [
+            4,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  2,
+                  5,
+                  12,
+                  18
+                ],
+                "blue": [
+                  8,
+                  10
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -13535,7 +13572,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26109",
+          "drawDate": "2026-09-23",
+          "red": [
+            12,
+            14,
+            16,
+            27,
+            34
+          ],
+          "blue": [
+            4,
+            8
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-24-muebyf8s",
