@@ -13745,7 +13745,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26111",
@@ -13760,6 +13760,22 @@
           ],
           "blue": [
             5
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26110",
+          "drawDate": "2026-09-26",
+          "red": [
+            3,
+            24,
+            25,
+            26,
+            35
+          ],
+          "blue": [
+            7,
+            9
           ],
           "wins": []
         }
@@ -13904,7 +13920,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26110",
+          "drawDate": "2026-09-26",
+          "red": [
+            3,
+            24,
+            25,
+            26,
+            35
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 3,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  3,
+                  6,
+                  24,
+                  31,
+                  35
+                ],
+                "blue": [
+                  2,
+                  4
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-26-muh7jmoo",
@@ -14045,7 +14099,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26110",
+          "drawDate": "2026-09-26",
+          "red": [
+            3,
+            24,
+            25,
+            26,
+            35
+          ],
+          "blue": [
+            7,
+            9
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-27-muilaivr",
