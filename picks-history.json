@@ -14288,7 +14288,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26112",
@@ -14305,6 +14305,43 @@
             11
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26111",
+          "drawDate": "2026-09-28",
+          "red": [
+            10,
+            11,
+            17,
+            26,
+            29
+          ],
+          "blue": [
+            1,
+            3
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  7,
+                  23,
+                  25,
+                  26,
+                  30
+                ],
+                "blue": [
+                  3,
+                  7
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -14447,7 +14484,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26111",
+          "drawDate": "2026-09-28",
+          "red": [
+            10,
+            11,
+            17,
+            26,
+            29
+          ],
+          "blue": [
+            1,
+            3
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-09-29-mulnar5u",
