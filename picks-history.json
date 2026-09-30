@@ -14483,7 +14483,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26111",
@@ -14500,6 +14500,43 @@
             3
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26113",
+          "drawDate": "2026-09-29",
+          "red": [
+            3,
+            4,
+            20,
+            24,
+            29,
+            30
+          ],
+          "blue": [
+            11
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  3,
+                  13,
+                  17,
+                  19,
+                  28,
+                  30
+                ],
+                "blue": [
+                  11
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -14642,7 +14679,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26113",
+          "drawDate": "2026-09-29",
+          "red": [
+            3,
+            4,
+            20,
+            24,
+            29,
+            30
+          ],
+          "blue": [
+            11
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  3,
+                  10,
+                  11,
+                  14,
+                  21,
+                  27
+                ],
+                "blue": [
+                  11
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-09-30-mumze2vp",
