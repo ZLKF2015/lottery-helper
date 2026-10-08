@@ -16044,7 +16044,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26114",
+          "drawDate": "2026-10-07",
+          "red": [
+            8,
+            12,
+            15,
+            29,
+            30
+          ],
+          "blue": [
+            9,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-08-muygmt2p",
