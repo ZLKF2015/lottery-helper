@@ -16238,7 +16238,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26115",
@@ -16255,6 +16255,43 @@
             3
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26115",
+          "drawDate": "2026-10-10",
+          "red": [
+            12,
+            20,
+            32,
+            33,
+            35
+          ],
+          "blue": [
+            6,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  24,
+                  27,
+                  31,
+                  33
+                ],
+                "blue": [
+                  5,
+                  6
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -16397,7 +16434,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26115",
+          "drawDate": "2026-10-10",
+          "red": [
+            12,
+            20,
+            32,
+            33,
+            35
+          ],
+          "blue": [
+            6,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  9,
+                  16,
+                  27,
+                  32,
+                  35
+                ],
+                "blue": [
+                  1,
+                  6
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-10-10-mv1adnd9",
@@ -16538,7 +16613,45 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26115",
+          "drawDate": "2026-10-10",
+          "red": [
+            12,
+            20,
+            32,
+            33,
+            35
+          ],
+          "blue": [
+            6,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  3,
+                  11,
+                  27,
+                  35
+                ],
+                "blue": [
+                  6,
+                  10
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-10-11-mv2nnaz7",
