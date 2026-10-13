@@ -16844,7 +16844,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26116",
@@ -16861,6 +16861,63 @@
             12
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26116",
+          "drawDate": "2026-10-12",
+          "red": [
+            9,
+            18,
+            22,
+            25,
+            35
+          ],
+          "blue": [
+            1,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  4,
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "blue": [
+                  4,
+                  10
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  11,
+                  16,
+                  22,
+                  30
+                ],
+                "blue": [
+                  1,
+                  8
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -17003,7 +17060,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26116",
+          "drawDate": "2026-10-12",
+          "red": [
+            9,
+            18,
+            22,
+            25,
+            35
+          ],
+          "blue": [
+            1,
+            10
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-13-mv5qyrq5",
