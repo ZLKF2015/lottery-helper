@@ -17254,7 +17254,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26117",
@@ -17271,6 +17271,43 @@
             4
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26117",
+          "drawDate": "2026-10-14",
+          "red": [
+            4,
+            13,
+            19,
+            29,
+            31
+          ],
+          "blue": [
+            2,
+            12
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  17,
+                  24,
+                  31,
+                  34
+                ],
+                "blue": [
+                  2,
+                  11
+                ]
+              }
+            }
+          ]
         }
       }
     },
@@ -17413,7 +17450,65 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26117",
+          "drawDate": "2026-10-14",
+          "red": [
+            4,
+            13,
+            19,
+            29,
+            31
+          ],
+          "blue": [
+            2,
+            12
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  7,
+                  13,
+                  16,
+                  31
+                ],
+                "blue": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  10,
+                  12,
+                  13,
+                  28,
+                  33
+                ],
+                "blue": [
+                  2,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2026-10-15-mv8cuflf",
