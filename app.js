@@ -40,10 +40,12 @@
   // ---------- 中奖等级规则 ----------
   const TIER_NAMES = {
     ssq: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖'],
-    dlt: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖', '七等奖', '八等奖'],
+    dlt: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖', '七等奖', '八等奖', '九等奖'],
   };
 
   // redMatch / blueMatch 对应 双色球 红/蓝，大乐透 前区/后区
+  // dlt 官方 9 级（2019-02 规则）：三=5+0｜四=4+2｜五=4+1｜六=3+2｜七=4+0｜
+  // 八=3+1、2+2｜九=3+0、1+2、2+1、0+2；2+0、1+1 等其余组合不中奖
   function tierOf(redMatch, blueMatch) {
     if (state.type === 'ssq') {
       if (redMatch === 6 && blueMatch === 1) return 1;
@@ -59,9 +61,11 @@
     if (redMatch === 5 && blueMatch === 0) return 3;
     if (redMatch === 4 && blueMatch === 2) return 4;
     if (redMatch === 4 && blueMatch === 1) return 5;
-    if ((redMatch === 3 && blueMatch === 2) || (redMatch === 4 && blueMatch === 0)) return 6;
-    if ((redMatch === 3 && blueMatch === 1) || (redMatch === 2 && blueMatch === 2) || (redMatch === 1 && blueMatch === 2)) return 7;
-    if ((redMatch === 3 && blueMatch === 0) || (redMatch === 2 && blueMatch === 1) || (redMatch === 1 && blueMatch === 1) || (redMatch === 0 && blueMatch === 2)) return 8;
+    if (redMatch === 3 && blueMatch === 2) return 6;
+    if (redMatch === 4 && blueMatch === 0) return 7;
+    if ((redMatch === 3 && blueMatch === 1) || (redMatch === 2 && blueMatch === 2)) return 8;
+    if ((redMatch === 3 && blueMatch === 0) || (redMatch === 2 && blueMatch === 1) ||
+        (redMatch === 1 && blueMatch === 2) || (redMatch === 0 && blueMatch === 2)) return 9;
     return 0;
   }
 
@@ -160,7 +164,7 @@
   // ---------- 渲染：查询 ----------
   function renderQuery() {
     const m = meta();
-    document.getElementById('queryHint').textContent = `共 ${list().length} 期 · 全部为官方真实开奖记录`;
+    document.getElementById('queryHint').textContent = `共 ${list().length} 期官方真实开奖记录（滚动窗口，非全部历史）`;
     renderResultList();
   }
 
@@ -496,25 +500,43 @@
   }
 
 
+  // ---------- 数据时效标识（避免陈旧的内置数据冒充最新）----------
+  function renderDataStamp(liveText) {
+    const live = document.getElementById('liveStamp');
+    if (!live) return;
+    if (liveText) { live.textContent = liveText; return; }
+    const gen = DATA.meta && DATA.meta.generatedAt;
+    if (gen) {
+      live.textContent = `内置数据截至 ${gen} · 打开本地服务可自动获取最新开奖`;
+    } else {
+      live.textContent = '正在展示内置历史数据 · 打开本地服务（node server.js）可获取最新开奖';
+    }
+  }
+
   // ---------- 实时刷新（经同源 /api，离线回退内置数据）----------
   async function refreshLive() {
+    let updated = false;
     try {
       for (const t of ['ssq', 'dlt']) {
         const res = await fetch(`/api/results?type=${t}`);
-        if (!res.ok) return;
+        if (!res.ok) continue; // 单彩种失败不影响另一彩种刷新
         const arr = await res.json();
         if (Array.isArray(arr) && arr.length) {
           DATA[t] = arr;
           DATA.meta[t].realCount = arr.length;
+          updated = true;
         }
       }
+      if (!updated) return;
+      // 数据已被替换：必须先失效统计缓存，否则热冷号/频率/和值/选号仍用旧数据
+      statsCache = { type: null, data: null };
       const stamp = new Date().toLocaleString('zh-CN', { hour12: false });
-      const live = document.getElementById('liveStamp');
-      if (live) live.textContent = `实时数据已更新 · ${stamp}`;
+      renderDataStamp(`实时数据已更新 · ${stamp}`);
       renderHero();
       renderQuery();
       renderStats();
       renderPredict();
+      renderCheckLabels();
     } catch (_) {
       /* 以 file:// 打开或无服务时，静默回退到内置 data.js */
     }
@@ -529,5 +551,6 @@
   renderStats();
   renderPredict();
   renderCheckLabels();
+  renderDataStamp();
   refreshLive(); // 若经 server.js 提供服务，则拉取最新官方开奖
 })();

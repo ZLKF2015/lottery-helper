@@ -10,14 +10,16 @@ const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
+const REQUEST_TIMEOUT_MS = 15000;
+
 async function getJSON(url, headers) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers } });
+  const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers }, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.json();
 }
 
 async function getText(url, headers) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers } });
+  const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers }, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.text();
 }

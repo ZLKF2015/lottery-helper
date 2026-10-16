@@ -1,12 +1,13 @@
-/* 生成机选号码 -> 通过 SMTP 发送推送邮件 -> 落盘保存推荐号码（供日后开奖核对）
+/* 生成机选号码 -> 先落盘保存推荐号码（sent:false）-> 通过 SMTP 发送推送邮件 -> 发送成功后置 sent:true
    配置优先级：环境变量 SMTP_*（GitHub Actions Secrets） > scripts/mail-config.json（本地）
    直接运行：node scripts/send-picks.js
-   未配置授权码时安全跳过，不发送、不报错退出。 */
+   未配置授权码时安全跳过，不发送、不报错退出。
+   顺序说明：先落盘再发信——即使发信失败，号码也已保存，开奖后仍会正常核对。 */
 'use strict';
 
 const { buildEmailBody } = require('./gen-picks');
 const { isConfigured, sendMail } = require('./mailer');
-const { appendRecord } = require('./picks-store');
+const { appendRecord, markSent } = require('./picks-store');
 
 async function main() {
   if (!isConfigured()) {
@@ -15,12 +16,14 @@ async function main() {
   }
 
   const email = buildEmailBody();
-  await sendMail({ subject: email.subject, text: email.text });
-  console.log('已发送推送邮件 ->', email.subject);
 
-  // 发送成功后，保存本次推荐号码，供开奖后核对
+  // 先落盘（sent:false），确保邮件里的号码一定有核对资格
   const rec = appendRecord(email.picks);
   console.log(`已保存推荐记录 ${rec.id}（双色球 ${rec.ssq.length} 注 + 大乐透 ${rec.dlt.length} 注）到 picks-history.json`);
+
+  await sendMail({ subject: email.subject, text: email.text });
+  markSent(rec);
+  console.log('已发送推送邮件 ->', email.subject);
 }
 
 main().catch((e) => {

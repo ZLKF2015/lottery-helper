@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# 与「开奖核对」工作流共用一把锁：两者都会改 picks-history.json，串行执行避免互相覆盖
+concurrency:
+  group: picks-history
+  cancel-in-progress: false
+
 jobs:
   send:
     runs-on: ubuntu-latest
@@ -35,7 +40,7 @@ jobs:
       - name: 发送机选号码邮件并保存推荐号码（5 注双色球 + 5 注大乐透）
         run: node scripts/send-picks.js
 
-      - name: 提交保存的推荐号码
+      - name: 提交保存的推荐号码（push 失败自动 rebase 重试）
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -44,7 +49,16 @@ jobs:
             echo "没有需要提交的推荐号码变更。"
           else
             git commit -m "chore: 保存每日推荐号码 [skip ci]"
-            git push
+            for i in 1 2 3; do
+              if git push; then
+                echo "push 成功（第 $i 次尝试）"
+                exit 0
+              fi
+              echo "push 失败（第 $i 次），rebase 远端后重试..."
+              git pull --rebase origin main || git rebase --abort
+            done
+            echo "连续 3 次 push 失败，放弃。"
+            exit 1
           fi
 
 # 说明：官方开奖数据刷新（fetch-official.js）依赖中彩网/500彩票，仅国内 IP 可访问，

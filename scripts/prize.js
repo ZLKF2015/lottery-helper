@@ -7,7 +7,7 @@
 
 const TIER_NAMES = {
   ssq: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖'],
-  dlt: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖', '七等奖', '八等奖'],
+  dlt: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖', '七等奖', '八等奖', '九等奖'],
 };
 
 function tierOf(type, redMatch, blueMatch) {
@@ -20,15 +20,19 @@ function tierOf(type, redMatch, blueMatch) {
     if ((redMatch === 2 && blueMatch === 1) || (redMatch === 1 && blueMatch === 1) || (redMatch === 0 && blueMatch === 1)) return 6;
     return 0;
   }
-  // dlt
+  // dlt 官方 9 级（2019-02 规则）：
+  // 三=5+0｜四=4+2｜五=4+1｜六=3+2｜七=4+0｜八=3+1、2+2｜九=3+0、1+2、2+1、0+2
+  // 注意：2+0、1+1 等其余组合官方不中奖
   if (redMatch === 5 && blueMatch === 2) return 1;
   if (redMatch === 5 && blueMatch === 1) return 2;
   if (redMatch === 5 && blueMatch === 0) return 3;
   if (redMatch === 4 && blueMatch === 2) return 4;
   if (redMatch === 4 && blueMatch === 1) return 5;
-  if ((redMatch === 3 && blueMatch === 2) || (redMatch === 4 && blueMatch === 0)) return 6;
-  if ((redMatch === 3 && blueMatch === 1) || (redMatch === 2 && blueMatch === 2) || (redMatch === 1 && blueMatch === 2)) return 7;
-  if ((redMatch === 3 && blueMatch === 0) || (redMatch === 2 && blueMatch === 1) || (redMatch === 1 && blueMatch === 1) || (redMatch === 0 && blueMatch === 2)) return 8;
+  if (redMatch === 3 && blueMatch === 2) return 6;
+  if (redMatch === 4 && blueMatch === 0) return 7;
+  if ((redMatch === 3 && blueMatch === 1) || (redMatch === 2 && blueMatch === 2)) return 8;
+  if ((redMatch === 3 && blueMatch === 0) || (redMatch === 2 && blueMatch === 1) ||
+      (redMatch === 1 && blueMatch === 2) || (redMatch === 0 && blueMatch === 2)) return 9;
   return 0;
 }
 

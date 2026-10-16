@@ -39,8 +39,25 @@ async function getLive(type) {
   return data;
 }
 
-const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host}`);
+const server = http.createServer((req, res) => {
+  let url;
+  try {
+    url = new URL(req.url, `http://${req.headers.host || '127.0.0.1'}`);
+  } catch (_) {
+    res.writeHead(400);
+    res.end('Bad Request');
+    return;
+  }
+  handle(req, res, url).catch(() => {
+    // 兜底：任何未预期异常都不允许击穿 handler 导致进程退出
+    try {
+      if (!res.headersSent) res.writeHead(500);
+      res.end('Internal Server Error');
+    } catch (_) {}
+  });
+});
+
+async function handle(req, res, url) {
   // ---- API ----
   if (url.pathname === '/api/results') {
     const type = url.searchParams.get('type');
@@ -63,10 +80,25 @@ const server = http.createServer(async (req, res) => {
     return;
   }
   // ---- 静态文件 ----
-  let p = decodeURIComponent(url.pathname);
+  let p;
+  try {
+    p = decodeURIComponent(url.pathname);
+  } catch (_) {
+    // 畸形编码（如 /%、/%zz）返回 400，而不是让 URIError 崩掉进程
+    res.writeHead(400);
+    res.end('Bad Request');
+    return;
+  }
+  if (p.includes('\0')) {
+    res.writeHead(400);
+    res.end('Bad Request');
+    return;
+  }
   if (p === '/') p = '/index.html';
   const filePath = path.join(ROOT, p);
-  if (!filePath.startsWith(ROOT)) {
+  // 用 path.relative 判断越界：拒绝父目录逃逸与同名前缀兄弟目录（如 /../lottery-helper-x/）
+  const rel = path.relative(ROOT, filePath);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
     res.writeHead(403);
     res.end('Forbidden');
     return;
@@ -80,7 +112,7 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': MIME[path.extname(filePath)] || 'application/octet-stream' });
     res.end(buf);
   });
-});
+}
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log(`开运·彩票助手已启动: http://127.0.0.1:${PORT}/`);

@@ -1,9 +1,9 @@
 /* ============================================================
    开运 · 彩票助手  —  官方真实开奖数据
-   生成时间: 2026-07-17T14:26:30.198Z
+   生成时间: 2026-10-16T23:47:45.910Z
    双色球来源: 中彩网官方接口 (www.cwl.gov.cn)
    大乐透来源: 500彩票历史表 (datachart.500.com，体彩网镜像)
-   本文件全部为官方真实开奖记录（共 629 期），
+   本文件全部为官方真实开奖记录（共 667 期），
    不含任何演示/模拟号码。运行 scripts/fetch-official.js 可刷新。
    ============================================================ */
 window.LOTTERY_DATA = {
@@ -34,10 +34,2009 @@ window.LOTTERY_DATA = {
       "blueCount": 2,
       "blueLabel": "后区",
       "source": "500彩票 (datachart.500.com)",
-      "realCount": 229
-    }
+      "realCount": 267
+    },
+    "generatedAt": "2026-10-17 07:47（北京时间）"
   },
   "ssq": [
+    {
+      "issue": "2026118",
+      "date": "2026-10-15",
+      "red": [
+        5,
+        21,
+        22,
+        23,
+        28,
+        31
+      ],
+      "blue": [
+        14
+      ],
+      "sales": 340890776,
+      "pool": 958655708,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 5,
+          "amount": 8783740
+        },
+        {
+          "tier": 2,
+          "count": 80,
+          "amount": 295604
+        },
+        {
+          "tier": 3,
+          "count": 1093,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 55355,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1114188,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9390219,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026117",
+      "date": "2026-10-13",
+      "red": [
+        4,
+        11,
+        14,
+        22,
+        26,
+        27
+      ],
+      "blue": [
+        4
+      ],
+      "sales": 332237260,
+      "pool": 931629281,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 9,
+          "amount": 6640325
+        },
+        {
+          "tier": 2,
+          "count": 151,
+          "amount": 122209
+        },
+        {
+          "tier": 3,
+          "count": 2116,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 87197,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1385873,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10267093,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026116",
+      "date": "2026-10-11",
+      "red": [
+        10,
+        19,
+        24,
+        27,
+        28,
+        33
+      ],
+      "blue": [
+        12
+      ],
+      "sales": 363128812,
+      "pool": 936031217,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 5,
+          "amount": 8754806
+        },
+        {
+          "tier": 2,
+          "count": 64,
+          "amount": 366680
+        },
+        {
+          "tier": 3,
+          "count": 1480,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 76734,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1331685,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10191862,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026115",
+      "date": "2026-10-08",
+      "red": [
+        4,
+        13,
+        14,
+        18,
+        22,
+        24
+      ],
+      "blue": [
+        3
+      ],
+      "sales": 337573290,
+      "pool": 909402631,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 15,
+          "amount": 6031127
+        },
+        {
+          "tier": 2,
+          "count": 131,
+          "amount": 147585
+        },
+        {
+          "tier": 3,
+          "count": 1912,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 80737,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1374142,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10490302,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026114",
+      "date": "2026-10-06",
+      "red": [
+        7,
+        18,
+        23,
+        24,
+        29,
+        31
+      ],
+      "blue": [
+        10
+      ],
+      "sales": 339993172,
+      "pool": 941868611,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 11,
+          "amount": 5775578
+        },
+        {
+          "tier": 2,
+          "count": 133,
+          "amount": 80181
+        },
+        {
+          "tier": 3,
+          "count": 3496,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 124296,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1763446,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 14191636,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026113",
+      "date": "2026-09-29",
+      "red": [
+        3,
+        4,
+        20,
+        24,
+        29,
+        30
+      ],
+      "blue": [
+        11
+      ],
+      "sales": 338536676,
+      "pool": 973407364,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 6845689
+        },
+        {
+          "tier": 2,
+          "count": 165,
+          "amount": 139824
+        },
+        {
+          "tier": 3,
+          "count": 1366,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 69907,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1304050,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8495716,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026112",
+      "date": "2026-09-27",
+      "red": [
+        1,
+        4,
+        11,
+        12,
+        17,
+        29
+      ],
+      "blue": [
+        11
+      ],
+      "sales": 351384920,
+      "pool": 972650894,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 7218903
+        },
+        {
+          "tier": 2,
+          "count": 123,
+          "amount": 135299
+        },
+        {
+          "tier": 3,
+          "count": 2295,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 99367,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1598735,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 12573150,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026111",
+      "date": "2026-09-24",
+      "red": [
+        6,
+        7,
+        14,
+        22,
+        31,
+        32
+      ],
+      "blue": [
+        5
+      ],
+      "sales": 325191464,
+      "pool": 966038984,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 102,
+          "amount": 179971
+        },
+        {
+          "tier": 3,
+          "count": 1478,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 72443,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1305871,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10786859,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026110",
+      "date": "2026-09-22",
+      "red": [
+        2,
+        5,
+        16,
+        19,
+        26,
+        32
+      ],
+      "blue": [
+        14
+      ],
+      "sales": 327624764,
+      "pool": 930967826,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 12,
+          "amount": 6654980
+        },
+        {
+          "tier": 2,
+          "count": 173,
+          "amount": 143495
+        },
+        {
+          "tier": 3,
+          "count": 1294,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 61852,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1193643,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 6609693,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026109",
+      "date": "2026-09-20",
+      "red": [
+        9,
+        12,
+        15,
+        26,
+        30,
+        33
+      ],
+      "blue": [
+        6
+      ],
+      "sales": 359008756,
+      "pool": 936353465,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 5,
+          "amount": 8207986
+        },
+        {
+          "tier": 2,
+          "count": 114,
+          "amount": 175876
+        },
+        {
+          "tier": 3,
+          "count": 1604,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 73746,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1351742,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 12527200,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026108",
+      "date": "2026-09-17",
+      "red": [
+        6,
+        11,
+        13,
+        14,
+        20,
+        28
+      ],
+      "blue": [
+        16
+      ],
+      "sales": 335294274,
+      "pool": 917243647,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 95,
+          "amount": 276194
+        },
+        {
+          "tier": 3,
+          "count": 843,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 49993,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1042395,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 7277723,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026107",
+      "date": "2026-09-15",
+      "red": [
+        1,
+        5,
+        9,
+        17,
+        24,
+        33
+      ],
+      "blue": [
+        4
+      ],
+      "sales": 328194638,
+      "pool": 858528126,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 9,
+          "amount": 6900239
+        },
+        {
+          "tier": 2,
+          "count": 249,
+          "amount": 85854
+        },
+        {
+          "tier": 3,
+          "count": 1595,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 76204,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1337305,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8381148,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026106",
+      "date": "2026-09-13",
+      "red": [
+        6,
+        11,
+        13,
+        14,
+        22,
+        30
+      ],
+      "blue": [
+        14
+      ],
+      "sales": 361568656,
+      "pool": 856497196,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 8953611
+        },
+        {
+          "tier": 2,
+          "count": 105,
+          "amount": 188267
+        },
+        {
+          "tier": 3,
+          "count": 1482,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 70762,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1301933,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 13295736,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026105",
+      "date": "2026-09-10",
+      "red": [
+        2,
+        4,
+        13,
+        14,
+        15,
+        30
+      ],
+      "blue": [
+        8
+      ],
+      "sales": 333874688,
+      "pool": 833007469,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 1,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 100,
+          "amount": 148168
+        },
+        {
+          "tier": 3,
+          "count": 1524,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 74016,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1329462,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 14332306,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026104",
+      "date": "2026-09-08",
+      "red": [
+        11,
+        12,
+        13,
+        19,
+        20,
+        31
+      ],
+      "blue": [
+        3
+      ],
+      "sales": 333116798,
+      "pool": 798557035,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 11,
+          "amount": 6596605
+        },
+        {
+          "tier": 2,
+          "count": 171,
+          "amount": 128382
+        },
+        {
+          "tier": 3,
+          "count": 1260,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 68059,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1256334,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9091759,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026103",
+      "date": "2026-09-06",
+      "red": [
+        4,
+        11,
+        20,
+        27,
+        28,
+        30
+      ],
+      "blue": [
+        15
+      ],
+      "sales": 362416068,
+      "pool": 805259723,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 8013753
+        },
+        {
+          "tier": 2,
+          "count": 125,
+          "amount": 210962
+        },
+        {
+          "tier": 3,
+          "count": 1343,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 65808,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1300300,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8381780,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026102",
+      "date": "2026-09-03",
+      "red": [
+        3,
+        4,
+        10,
+        13,
+        16,
+        25
+      ],
+      "blue": [
+        9
+      ],
+      "sales": 335960988,
+      "pool": 782244968,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 8286261
+        },
+        {
+          "tier": 2,
+          "count": 93,
+          "amount": 176680
+        },
+        {
+          "tier": 3,
+          "count": 1507,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 71011,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1260612,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 13513266,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026101",
+      "date": "2026-09-01",
+      "red": [
+        5,
+        6,
+        8,
+        9,
+        24,
+        25
+      ],
+      "blue": [
+        12
+      ],
+      "sales": 329493946,
+      "pool": 766096090,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 8881916
+        },
+        {
+          "tier": 2,
+          "count": 183,
+          "amount": 106063
+        },
+        {
+          "tier": 3,
+          "count": 1766,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 92359,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1748531,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8511719,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026100",
+      "date": "2026-08-30",
+      "red": [
+        3,
+        4,
+        9,
+        13,
+        22,
+        31
+      ],
+      "blue": [
+        4
+      ],
+      "sales": 357107230,
+      "pool": 743395010,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 40,
+          "amount": 2500000
+        },
+        {
+          "tier": 2,
+          "count": 217,
+          "amount": 102830
+        },
+        {
+          "tier": 3,
+          "count": 1624,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 83114,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1469999,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9906198,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026099",
+      "date": "2026-08-27",
+      "red": [
+        1,
+        12,
+        14,
+        18,
+        30,
+        31
+      ],
+      "blue": [
+        2
+      ],
+      "sales": 344486222,
+      "pool": 776452438,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 75,
+          "amount": 379034
+        },
+        {
+          "tier": 3,
+          "count": 742,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 41096,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 882010,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 7164549,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026098",
+      "date": "2026-08-25",
+      "red": [
+        8,
+        16,
+        18,
+        22,
+        25,
+        26
+      ],
+      "blue": [
+        7
+      ],
+      "sales": 337464770,
+      "pool": 711169786,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 6866583
+        },
+        {
+          "tier": 2,
+          "count": 122,
+          "amount": 133873
+        },
+        {
+          "tier": 3,
+          "count": 1487,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 77400,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1421653,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 13173958,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026097",
+      "date": "2026-08-23",
+      "red": [
+        5,
+        16,
+        24,
+        26,
+        29,
+        30
+      ],
+      "blue": [
+        2
+      ],
+      "sales": 369897178,
+      "pool": 710238057,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 96,
+          "amount": 264245
+        },
+        {
+          "tier": 3,
+          "count": 1324,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 69726,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1365481,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9641478,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026096",
+      "date": "2026-08-20",
+      "red": [
+        1,
+        4,
+        16,
+        22,
+        26,
+        31
+      ],
+      "blue": [
+        4
+      ],
+      "sales": 344932190,
+      "pool": 654135395,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 8348282
+        },
+        {
+          "tier": 2,
+          "count": 118,
+          "amount": 212814
+        },
+        {
+          "tier": 3,
+          "count": 1050,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 54304,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1066217,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8779065,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026095",
+      "date": "2026-08-18",
+      "red": [
+        4,
+        6,
+        14,
+        21,
+        22,
+        33
+      ],
+      "blue": [
+        16
+      ],
+      "sales": 347737104,
+      "pool": 628888733,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 7475143
+        },
+        {
+          "tier": 2,
+          "count": 112,
+          "amount": 193370
+        },
+        {
+          "tier": 3,
+          "count": 1447,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 67184,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1211396,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10773879,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026094",
+      "date": "2026-08-16",
+      "red": [
+        6,
+        13,
+        15,
+        17,
+        24,
+        25
+      ],
+      "blue": [
+        1
+      ],
+      "sales": 373881722,
+      "pool": 616242219,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 142,
+          "amount": 210861
+        },
+        {
+          "tier": 3,
+          "count": 988,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 53492,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1139023,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 7676033,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026093",
+      "date": "2026-08-13",
+      "red": [
+        5,
+        8,
+        15,
+        20,
+        21,
+        24
+      ],
+      "blue": [
+        9
+      ],
+      "sales": 348046564,
+      "pool": 566415284,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 8,
+          "amount": 6581443
+        },
+        {
+          "tier": 2,
+          "count": 109,
+          "amount": 145086
+        },
+        {
+          "tier": 3,
+          "count": 2079,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 90500,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1517204,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 13555209,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026092",
+      "date": "2026-08-11",
+      "red": [
+        9,
+        11,
+        12,
+        25,
+        30,
+        33
+      ],
+      "blue": [
+        11
+      ],
+      "sales": 339633672,
+      "pool": 571623532,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 12,
+          "amount": 6466298
+        },
+        {
+          "tier": 2,
+          "count": 79,
+          "amount": 278411
+        },
+        {
+          "tier": 3,
+          "count": 1317,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 64191,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1232442,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9865794,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026091",
+      "date": "2026-08-09",
+      "red": [
+        2,
+        13,
+        14,
+        16,
+        20,
+        24
+      ],
+      "blue": [
+        5
+      ],
+      "sales": 367362274,
+      "pool": 583235682,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 79,
+          "amount": 328709
+        },
+        {
+          "tier": 3,
+          "count": 952,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 54095,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1136984,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 10218077,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026090",
+      "date": "2026-08-06",
+      "red": [
+        2,
+        4,
+        15,
+        23,
+        25,
+        27
+      ],
+      "blue": [
+        3
+      ],
+      "sales": 348980318,
+      "pool": 545331466,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 86,
+          "amount": 332528
+        },
+        {
+          "tier": 3,
+          "count": 778,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 44670,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 974264,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 7119988,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026089",
+      "date": "2026-08-04",
+      "red": [
+        5,
+        18,
+        23,
+        24,
+        27,
+        33
+      ],
+      "blue": [
+        3
+      ],
+      "sales": 345041020,
+      "pool": 489539135,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 88,
+          "amount": 293109
+        },
+        {
+          "tier": 3,
+          "count": 950,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 56950,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1162655,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8005826,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026088",
+      "date": "2026-08-02",
+      "red": [
+        6,
+        7,
+        11,
+        18,
+        22,
+        33
+      ],
+      "blue": [
+        5
+      ],
+      "sales": 373747432,
+      "pool": 442158322,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 34,
+          "amount": 2941176
+        },
+        {
+          "tier": 2,
+          "count": 506,
+          "amount": 45037
+        },
+        {
+          "tier": 3,
+          "count": 2438,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 112457,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1707004,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9020891,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026087",
+      "date": "2026-07-30",
+      "red": [
+        4,
+        6,
+        10,
+        18,
+        23,
+        31
+      ],
+      "blue": [
+        11
+      ],
+      "sales": 349545040,
+      "pool": 473791046,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 8,
+          "amount": 7296989
+        },
+        {
+          "tier": 2,
+          "count": 108,
+          "amount": 212684
+        },
+        {
+          "tier": 3,
+          "count": 1440,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 68524,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1256080,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9762375,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026086",
+      "date": "2026-07-28",
+      "red": [
+        2,
+        5,
+        14,
+        25,
+        30,
+        32
+      ],
+      "blue": [
+        5
+      ],
+      "sales": 345608568,
+      "pool": 463257269,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 7501853
+        },
+        {
+          "tier": 2,
+          "count": 195,
+          "amount": 112262
+        },
+        {
+          "tier": 3,
+          "count": 1728,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 89274,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1568832,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8611243,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026085",
+      "date": "2026-07-26",
+      "red": [
+        6,
+        9,
+        13,
+        17,
+        24,
+        28
+      ],
+      "blue": [
+        15
+      ],
+      "sales": 368292652,
+      "pool": 450096595,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 17,
+          "amount": 5882352
+        },
+        {
+          "tier": 2,
+          "count": 326,
+          "amount": 71094
+        },
+        {
+          "tier": 3,
+          "count": 1961,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 95174,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1524669,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9518441,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026084",
+      "date": "2026-07-23",
+      "red": [
+        1,
+        5,
+        6,
+        10,
+        12,
+        16
+      ],
+      "blue": [
+        5
+      ],
+      "sales": 348718788,
+      "pool": 480566551,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 6809591
+        },
+        {
+          "tier": 2,
+          "count": 107,
+          "amount": 211400
+        },
+        {
+          "tier": 3,
+          "count": 1339,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 71880,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1332819,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9734286,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026083",
+      "date": "2026-07-21",
+      "red": [
+        7,
+        14,
+        15,
+        23,
+        28,
+        33
+      ],
+      "blue": [
+        3
+      ],
+      "sales": 348240258,
+      "pool": 480802779,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 0,
+          "amount": 0
+        },
+        {
+          "tier": 2,
+          "count": 111,
+          "amount": 214159
+        },
+        {
+          "tier": 3,
+          "count": 1277,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 59735,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1122950,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 9708655,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "issue": "2026082",
+      "date": "2026-07-19",
+      "red": [
+        5,
+        7,
+        10,
+        14,
+        21,
+        28
+      ],
+      "blue": [
+        4
+      ],
+      "sales": 375000824,
+      "pool": 409487566,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 7104774
+        },
+        {
+          "tier": 2,
+          "count": 215,
+          "amount": 122370
+        },
+        {
+          "tier": 3,
+          "count": 1472,
+          "amount": 3000
+        },
+        {
+          "tier": 4,
+          "count": 81044,
+          "amount": 200
+        },
+        {
+          "tier": 5,
+          "count": 1528508,
+          "amount": 10
+        },
+        {
+          "tier": 6,
+          "count": 8520356,
+          "amount": 5
+        },
+        {
+          "tier": 7,
+          "count": 0,
+          "amount": 0
+        }
+      ]
+    },
     {
       "issue": "2026081",
       "date": "2026-07-16",
@@ -19639,23 +21638,779 @@ window.LOTTERY_DATA = {
           "amount": 0
         }
       ]
+    }
+  ],
+  "dlt": [
+    {
+      "issue": "26117",
+      "date": "2026-10-14",
+      "front": [
+        4,
+        13,
+        19,
+        29,
+        31
+      ],
+      "back": [
+        2,
+        12
+      ],
+      "pool": 746384997,
+      "sales": 291650582,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 5834813
+        },
+        {
+          "tier": 2,
+          "count": 194,
+          "amount": 53634
+        }
+      ]
     },
     {
-      "issue": "2024020",
-      "date": "2024-02-25",
-      "red": [
-        3,
+      "issue": "26116",
+      "date": "2026-10-12",
+      "front": [
+        9,
+        18,
+        22,
+        25,
+        35
+      ],
+      "back": [
+        1,
+        10
+      ],
+      "pool": 780428328,
+      "sales": 293575132,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 76,
+          "amount": 213000
+        }
+      ]
+    },
+    {
+      "issue": "26115",
+      "date": "2026-10-10",
+      "front": [
+        12,
+        20,
+        32,
+        33,
+        35
+      ],
+      "back": [
+        6,
+        7
+      ],
+      "pool": 733972024,
+      "sales": 321291403,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 6339312
+        },
+        {
+          "tier": 2,
+          "count": 92,
+          "amount": 181232
+        }
+      ]
+    },
+    {
+      "issue": "26114",
+      "date": "2026-10-07",
+      "front": [
         8,
         12,
+        15,
+        29,
+        30
+      ],
+      "back": [
+        9,
+        12
+      ],
+      "pool": 747810334,
+      "sales": 277888881,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 5,
+          "amount": 7702634
+        },
+        {
+          "tier": 2,
+          "count": 142,
+          "amount": 85822
+        }
+      ]
+    },
+    {
+      "issue": "26113",
+      "date": "2026-10-05",
+      "front": [
+        2,
+        4,
+        6,
+        10,
+        11
+      ],
+      "back": [
+        1,
+        10
+      ],
+      "pool": 733622134,
+      "sales": 252968482,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 37,
+          "amount": 2392344
+        },
+        {
+          "tier": 2,
+          "count": 363,
+          "amount": 22428
+        }
+      ]
+    },
+    {
+      "issue": "26112",
+      "date": "2026-09-30",
+      "front": [
+        1,
+        3,
+        5,
+        10,
+        22
+      ],
+      "back": [
+        3,
+        9
+      ],
+      "pool": 798649741,
+      "sales": 306396671,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 8047843
+        },
+        {
+          "tier": 2,
+          "count": 109,
+          "amount": 133482
+        }
+      ]
+    },
+    {
+      "issue": "26111",
+      "date": "2026-09-28",
+      "front": [
+        10,
+        11,
+        17,
+        26,
+        29
+      ],
+      "back": [
+        1,
+        3
+      ],
+      "pool": 819506211,
+      "sales": 289057331,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 6978221
+        },
+        {
+          "tier": 2,
+          "count": 146,
+          "amount": 97326
+        }
+      ]
+    },
+    {
+      "issue": "26110",
+      "date": "2026-09-26",
+      "front": [
+        3,
+        24,
+        25,
+        26,
+        35
+      ],
+      "back": [
+        7,
+        9
+      ],
+      "pool": 853999858,
+      "sales": 302677559,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 7901705
+        },
+        {
+          "tier": 2,
+          "count": 118,
+          "amount": 118598
+        }
+      ]
+    },
+    {
+      "issue": "26109",
+      "date": "2026-09-23",
+      "front": [
+        12,
         14,
+        16,
+        27,
+        34
+      ],
+      "back": [
+        4,
+        8
+      ],
+      "pool": 875294743,
+      "sales": 290272321,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 1,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 57,
+          "amount": 405500
+        }
+      ]
+    },
+    {
+      "issue": "26108",
+      "date": "2026-09-21",
+      "front": [
+        1,
+        5,
+        7,
+        21,
+        35
+      ],
+      "back": [
+        1,
+        4
+      ],
+      "pool": 845758402,
+      "sales": 296206851,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 85,
+          "amount": 320463
+        }
+      ]
+    },
+    {
+      "issue": "26107",
+      "date": "2026-09-19",
+      "front": [
+        2,
+        5,
+        7,
+        14,
+        22
+      ],
+      "back": [
+        4,
+        10
+      ],
+      "pool": 831053727,
+      "sales": 313508185,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 77,
+          "amount": 264830
+        }
+      ]
+    },
+    {
+      "issue": "26106",
+      "date": "2026-09-16",
+      "front": [
+        14,
+        17,
+        21,
+        25,
+        28
+      ],
+      "back": [
+        4,
+        6
+      ],
+      "pool": 826970067,
+      "sales": 290236360,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 71,
+          "amount": 200438
+        }
+      ]
+    },
+    {
+      "issue": "26105",
+      "date": "2026-09-14",
+      "front": [
+        10,
+        14,
+        30,
+        33,
+        34
+      ],
+      "back": [
+        9,
+        12
+      ],
+      "pool": 797986462,
+      "sales": 290941792,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 9415460
+        },
+        {
+          "tier": 2,
+          "count": 48,
+          "amount": 339276
+        }
+      ]
+    },
+    {
+      "issue": "26104",
+      "date": "2026-09-12",
+      "front": [
+        1,
+        6,
+        14,
+        15,
+        26
+      ],
+      "back": [
+        8,
+        9
+      ],
+      "pool": 768328091,
+      "sales": 316250501,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 6952434
+        },
+        {
+          "tier": 2,
+          "count": 110,
+          "amount": 128072
+        }
+      ]
+    },
+    {
+      "issue": "26103",
+      "date": "2026-09-09",
+      "front": [
+        3,
+        16,
+        17,
+        32,
+        35
+      ],
+      "back": [
+        2,
+        12
+      ],
+      "pool": 763164025,
+      "sales": 296391996,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 68,
+          "amount": 241603
+        }
+      ]
+    },
+    {
+      "issue": "26102",
+      "date": "2026-09-07",
+      "front": [
+        1,
+        3,
+        7,
+        27,
+        28
+      ],
+      "back": [
+        6,
+        7
+      ],
+      "pool": 725321799,
+      "sales": 291295536,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 1,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 183,
+          "amount": 57598
+        }
+      ]
+    },
+    {
+      "issue": "26101",
+      "date": "2026-09-05",
+      "front": [
+        9,
+        11,
+        18,
+        26,
+        33
+      ],
+      "back": [
+        9,
+        11
+      ],
+      "pool": 692723357,
+      "sales": 315133456,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 5927001
+        },
+        {
+          "tier": 2,
+          "count": 167,
+          "amount": 81242
+        }
+      ]
+    },
+    {
+      "issue": "26100",
+      "date": "2026-09-02",
+      "front": [
+        2,
+        6,
+        11,
+        15,
+        31
+      ],
+      "back": [
+        7,
+        8
+      ],
+      "pool": 728785802,
+      "sales": 293430528,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 6733541
+        },
+        {
+          "tier": 2,
+          "count": 109,
+          "amount": 129804
+        }
+      ]
+    },
+    {
+      "issue": "26099",
+      "date": "2026-08-31",
+      "front": [
+        2,
+        17,
+        20,
+        29,
+        33
+      ],
+      "back": [
+        8,
+        9
+      ],
+      "pool": 728556728,
+      "sales": 295696198,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 8305500
+        },
+        {
+          "tier": 2,
+          "count": 98,
+          "amount": 144001
+        }
+      ]
+    },
+    {
+      "issue": "26098",
+      "date": "2026-08-29",
+      "front": [
+        7,
+        9,
+        18,
+        19,
+        21
+      ],
+      "back": [
+        2,
+        9
+      ],
+      "pool": 706544164,
+      "sales": 211224461,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 15,
+          "amount": 5050505
+        },
+        {
+          "tier": 2,
+          "count": 211,
+          "amount": 46996
+        }
+      ]
+    },
+    {
+      "issue": "26097",
+      "date": "2026-08-26",
+      "front": [
+        3,
+        10,
+        12,
+        20,
+        25
+      ],
+      "back": [
+        1,
+        9
+      ],
+      "pool": 762988476,
+      "sales": 296031159,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 7,
+          "amount": 6840926
+        },
+        {
+          "tier": 2,
+          "count": 152,
+          "amount": 84016
+        }
+      ]
+    },
+    {
+      "issue": "26096",
+      "date": "2026-08-24",
+      "front": [
+        8,
+        9,
+        10,
+        11,
+        25
+      ],
+      "back": [
+        4,
+        12
+      ],
+      "pool": 760346716,
+      "sales": 300992176,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 9,
+          "amount": 6561952
+        },
+        {
+          "tier": 2,
+          "count": 222,
+          "amount": 57893
+        }
+      ]
+    },
+    {
+      "issue": "26095",
+      "date": "2026-08-22",
+      "front": [
+        4,
+        6,
+        8,
+        10,
+        14
+      ],
+      "back": [
+        4,
+        5
+      ],
+      "pool": 801693150,
+      "sales": 323275140,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 6,
+          "amount": 7103866
+        },
+        {
+          "tier": 2,
+          "count": 200,
+          "amount": 60688
+        }
+      ]
+    },
+    {
+      "issue": "26094",
+      "date": "2026-08-19",
+      "front": [
+        5,
+        14,
+        15,
         17,
         33
       ],
-      "blue": [
-        8
+      "back": [
+        1,
+        7
       ],
-      "sales": 401743532,
-      "pool": 2292837056,
+      "pool": 795085879,
+      "sales": 305764076,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 3,
+          "amount": 8380751
+        },
+        {
+          "tier": 2,
+          "count": 89,
+          "amount": 174914
+        }
+      ]
+    },
+    {
+      "issue": "26093",
+      "date": "2026-08-17",
+      "front": [
+        8,
+        10,
+        22,
+        26,
+        29
+      ],
+      "back": [
+        3,
+        10
+      ],
+      "pool": 772986653,
+      "sales": 301981951,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 10,
+          "amount": 5848781
+        },
+        {
+          "tier": 2,
+          "count": 165,
+          "amount": 48915
+        }
+      ]
+    },
+    {
+      "issue": "26092",
+      "date": "2026-08-15",
+      "front": [
+        12,
+        16,
+        19,
+        29,
+        33
+      ],
+      "back": [
+        7,
+        9
+      ],
+      "pool": 822403232,
+      "sales": 326419006,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 4,
+          "amount": 9601645
+        },
+        {
+          "tier": 2,
+          "count": 97,
+          "amount": 194094
+        }
+      ]
+    },
+    {
+      "issue": "26091",
+      "date": "2026-08-12",
+      "front": [
+        3,
+        4,
+        7,
+        12,
+        32
+      ],
+      "back": [
+        1,
+        2
+      ],
+      "pool": 835359282,
+      "sales": 303722394,
       "prize": [
         {
           "tier": 1,
@@ -19665,1981 +22420,329 @@ window.LOTTERY_DATA = {
         {
           "tier": 2,
           "count": 65,
-          "amount": 424047
-        },
-        {
-          "tier": 3,
-          "count": 1689,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 71905,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1398070,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10634665,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "amount": 343183
         }
       ]
     },
     {
-      "issue": "2024019",
-      "date": "2024-02-22",
-      "red": [
-        5,
-        11,
-        12,
-        16,
-        17,
-        20
-      ],
-      "blue": [
-        8
-      ],
-      "sales": 362006810,
-      "pool": 2240147827,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 10,
-          "amount": 6256934
-        },
-        {
-          "tier": 2,
-          "count": 107,
-          "amount": 146838
-        },
-        {
-          "tier": 3,
-          "count": 2210,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 99689,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1707398,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 14178970,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024018",
-      "date": "2024-02-20",
-      "red": [
-        6,
-        15,
-        17,
-        24,
-        28,
-        29
-      ],
-      "blue": [
-        16
-      ],
-      "sales": 362234554,
-      "pool": 2255582139,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 9,
-          "amount": 7077975
-        },
-        {
-          "tier": 2,
-          "count": 224,
-          "amount": 104362
-        },
-        {
-          "tier": 3,
-          "count": 1175,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 71318,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1401175,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10437140,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024017",
-      "date": "2024-02-18",
-      "red": [
-        4,
+      "issue": "26090",
+      "date": "2026-08-10",
+      "front": [
+        9,
+        14,
         17,
         19,
-        20,
-        25,
-        32
+        24
       ],
-      "blue": [
-        4
+      "back": [
+        2,
+        9
       ],
-      "sales": 408414594,
-      "pool": 2249152255,
+      "pool": 825721619,
+      "sales": 298321791,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 93,
+          "amount": 155846
+        }
+      ]
+    },
+    {
+      "issue": "26089",
+      "date": "2026-08-08",
+      "front": [
+        3,
+        7,
+        12,
+        14,
+        26
+      ],
+      "back": [
+        5,
+        11
+      ],
+      "pool": 817996545,
+      "sales": 326458125,
       "prize": [
         {
           "tier": 1,
           "count": 3,
-          "amount": 10000000
+          "amount": 9058951
         },
         {
           "tier": 2,
-          "count": 96,
-          "amount": 336763
-        },
-        {
-          "tier": 3,
-          "count": 1059,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 64483,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1279711,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 8387076,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "count": 150,
+          "amount": 97508
         }
       ]
     },
     {
-      "issue": "2024016",
-      "date": "2024-02-06",
-      "red": [
-        7,
-        12,
-        20,
-        24,
-        32,
-        33
-      ],
-      "blue": [
-        4
-      ],
-      "sales": 398150146,
-      "pool": 2182164460,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 136,
-          "amount": 5166908
-        },
-        {
-          "tier": 2,
-          "count": 87,
-          "amount": 326142
-        },
-        {
-          "tier": 3,
-          "count": 1086,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 64920,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1257143,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10556478,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024015",
-      "date": "2024-02-04",
-      "red": [
+      "issue": "26088",
+      "date": "2026-08-05",
+      "front": [
         3,
-        8,
-        17,
-        18,
-        20,
-        30
-      ],
-      "blue": [
-        15
-      ],
-      "sales": 391425990,
-      "pool": 2799740697,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 8302983
-        },
-        {
-          "tier": 2,
-          "count": 254,
-          "amount": 113783
-        },
-        {
-          "tier": 3,
-          "count": 1697,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 93969,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1721943,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 7018020,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024014",
-      "date": "2024-02-01",
-      "red": [
-        1,
-        2,
-        10,
-        22,
-        24,
-        25
-      ],
-      "blue": [
-        13
-      ],
-      "sales": 369008560,
-      "pool": 2771158275,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 8397008
-        },
-        {
-          "tier": 2,
-          "count": 110,
-          "amount": 270216
-        },
-        {
-          "tier": 3,
-          "count": 817,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 47506,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1009701,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 7973936,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024013",
-      "date": "2024-01-30",
-      "red": [
-        1,
-        7,
-        10,
-        14,
-        21,
-        25
-      ],
-      "blue": [
-        7
-      ],
-      "sales": 368057096,
-      "pool": 2740765858,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 14,
-          "amount": 6178793
-        },
-        {
-          "tier": 2,
-          "count": 149,
-          "amount": 138448
-        },
-        {
-          "tier": 3,
-          "count": 1473,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 68781,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1233074,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 13465300,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024012",
-      "date": "2024-01-28",
-      "red": [
-        1,
-        3,
-        7,
-        18,
-        22,
-        28
-      ],
-      "blue": [
-        15
-      ],
-      "sales": 406461312,
-      "pool": 2765382313,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 8677481
-        },
-        {
-          "tier": 2,
-          "count": 138,
-          "amount": 233173
-        },
-        {
-          "tier": 3,
-          "count": 1112,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 70293,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1477055,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 7657808,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024011",
-      "date": "2024-01-25",
-      "red": [
-        8,
-        12,
-        16,
-        20,
-        27,
-        31
-      ],
-      "blue": [
-        6
-      ],
-      "sales": 382080084,
-      "pool": 2729590794,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 13,
-          "amount": 5600516
-        },
-        {
-          "tier": 2,
-          "count": 143,
-          "amount": 68240
-        },
-        {
-          "tier": 3,
-          "count": 2469,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 114831,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1905870,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 19750755,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024010",
-      "date": "2024-01-23",
-      "red": [
-        11,
-        16,
-        20,
-        21,
-        23,
-        24
-      ],
-      "blue": [
-        4
-      ],
-      "sales": 372460178,
-      "pool": 2773122333,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 4,
-          "amount": 10000000
-        },
-        {
-          "tier": 2,
-          "count": 73,
-          "amount": 399825
-        },
-        {
-          "tier": 3,
-          "count": 849,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 49199,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1032086,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 8609777,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024009",
-      "date": "2024-01-21",
-      "red": [
-        1,
-        4,
-        7,
-        10,
-        17,
-        23
-      ],
-      "blue": [
-        14
-      ],
-      "sales": 409759128,
-      "pool": 2725560627,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 4,
-          "amount": 10000000
-        },
-        {
-          "tier": 2,
-          "count": 118,
-          "amount": 240959
-        },
-        {
-          "tier": 3,
-          "count": 1142,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 72592,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1336511,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 11147882,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024008",
-      "date": "2024-01-18",
-      "red": [
-        8,
-        20,
-        21,
-        23,
-        27,
-        30
-      ],
-      "blue": [
-        13
-      ],
-      "sales": 390103204,
-      "pool": 2680260839,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 5,
-          "amount": 9439349
-        },
-        {
-          "tier": 2,
-          "count": 151,
-          "amount": 183747
-        },
-        {
-          "tier": 3,
-          "count": 1224,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 75696,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1472205,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 9326717,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024007",
-      "date": "2024-01-16",
-      "red": [
-        4,
-        5,
-        6,
-        7,
-        20,
-        22
-      ],
-      "blue": [
-        15
-      ],
-      "sales": 391831746,
-      "pool": 2644219785,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 5,
-          "amount": 9552387
-        },
-        {
-          "tier": 2,
-          "count": 178,
-          "amount": 159845
-        },
-        {
-          "tier": 3,
-          "count": 1260,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 72442,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1339251,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 9305394,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024006",
-      "date": "2024-01-14",
-      "red": [
-        7,
-        18,
-        20,
-        21,
-        26,
-        32
-      ],
-      "blue": [
-        5
-      ],
-      "sales": 430067550,
-      "pool": 2606624464,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 11,
-          "amount": 7265119
-        },
-        {
-          "tier": 2,
-          "count": 98,
-          "amount": 317810
-        },
-        {
-          "tier": 3,
-          "count": 1781,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 68541,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1326072,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10767926,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024005",
-      "date": "2024-01-11",
-      "red": [
-        5,
-        6,
-        20,
-        23,
-        25,
-        32
-      ],
-      "blue": [
-        3
-      ],
-      "sales": 407820678,
-      "pool": 2593104612,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 5,
-          "amount": 10000000
-        },
-        {
-          "tier": 2,
-          "count": 99,
-          "amount": 333906
-        },
-        {
-          "tier": 3,
-          "count": 986,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 60428,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1244417,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 8023512,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024004",
-      "date": "2024-01-09",
-      "red": [
         9,
-        13,
-        17,
-        18,
-        21,
+        11,
+        24,
         27
       ],
-      "blue": [
-        4
+      "back": [
+        5,
+        11
       ],
-      "sales": 397770990,
-      "pool": 2543934511,
+      "pool": 792266898,
+      "sales": 305815169,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 9662603
+        },
+        {
+          "tier": 2,
+          "count": 160,
+          "amount": 74485
+        }
+      ]
+    },
+    {
+      "issue": "26087",
+      "date": "2026-08-03",
+      "front": [
+        5,
+        10,
+        16,
+        24,
+        27
+      ],
+      "back": [
+        4,
+        10
+      ],
+      "pool": 768406559,
+      "sales": 306098479,
       "prize": [
         {
           "tier": 1,
           "count": 9,
-          "amount": 7037575
-        },
-        {
-          "tier": 2,
-          "count": 163,
-          "amount": 140630
-        },
-        {
-          "tier": 3,
-          "count": 1832,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 83890,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1526738,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 13135106,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024003",
-      "date": "2024-01-07",
-      "red": [
-        1,
-        5,
-        8,
-        13,
-        32,
-        33
-      ],
-      "blue": [
-        3
-      ],
-      "sales": 428830208,
-      "pool": 2538504530,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 12,
-          "amount": 6749071
-        },
-        {
-          "tier": 2,
-          "count": 116,
-          "amount": 226173
-        },
-        {
-          "tier": 3,
-          "count": 1757,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 90137,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1715695,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 12945429,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024002",
-      "date": "2024-01-04",
-      "red": [
-        4,
-        9,
-        10,
-        17,
-        19,
-        20
-      ],
-      "blue": [
-        9
-      ],
-      "sales": 402054502,
-      "pool": 2540785162,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 30,
-          "amount": 5455071
-        },
-        {
-          "tier": 2,
-          "count": 196,
-          "amount": 87067
-        },
-        {
-          "tier": 3,
-          "count": 3728,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 136512,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2087581,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 13876745,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2024001",
-      "date": "2024-01-02",
-      "red": [
-        3,
-        7,
-        16,
-        26,
-        27,
-        32
-      ],
-      "blue": [
-        16
-      ],
-      "sales": 397951464,
-      "pool": 2653241738,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 8203438
-        },
-        {
-          "tier": 2,
-          "count": 164,
-          "amount": 170915
-        },
-        {
-          "tier": 3,
-          "count": 1627,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 80646,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1417521,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 9538092,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023151",
-      "date": "2023-12-31",
-      "red": [
-        1,
-        15,
-        16,
-        20,
-        25,
-        27
-      ],
-      "blue": [
-        5
-      ],
-      "sales": 452958034,
-      "pool": 2626575547,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 10,
-          "amount": 7807583
-        },
-        {
-          "tier": 2,
-          "count": 112,
-          "amount": 313346
-        },
-        {
-          "tier": 3,
-          "count": 1294,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 69957,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1383909,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 9971552,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023150",
-      "date": "2023-12-28",
-      "red": [
-        10,
-        17,
-        25,
-        26,
-        30,
-        33
-      ],
-      "blue": [
-        5
-      ],
-      "sales": 411922624,
-      "pool": 2599366995,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 8074962
-        },
-        {
-          "tier": 2,
-          "count": 109,
-          "amount": 246843
-        },
-        {
-          "tier": 3,
-          "count": 1316,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 71791,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1350868,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 12480704,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023149",
-      "date": "2023-12-26",
-      "red": [
-        2,
-        10,
-        19,
-        24,
-        26,
-        33
-      ],
-      "blue": [
-        15
-      ],
-      "sales": 405361488,
-      "pool": 2575173968,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 4,
-          "amount": 10000000
-        },
-        {
-          "tier": 2,
-          "count": 134,
-          "amount": 217847
-        },
-        {
-          "tier": 3,
-          "count": 1133,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 60899,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1213889,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10828663,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023148",
-      "date": "2023-12-24",
-      "red": [
-        3,
-        5,
-        7,
-        9,
-        19,
-        20
-      ],
-      "blue": [
-        8
-      ],
-      "sales": 454223900,
-      "pool": 2527599376,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 39,
-          "amount": 5414501
-        },
-        {
-          "tier": 2,
-          "count": 424,
-          "amount": 47657
-        },
-        {
-          "tier": 3,
-          "count": 4248,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 157114,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2313131,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 14888757,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023147",
-      "date": "2023-12-21",
-      "red": [
-        5,
-        6,
-        14,
-        16,
-        19,
-        32
-      ],
-      "blue": [
-        12
-      ],
-      "sales": 432874498,
-      "pool": 2678144078,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 8,
-          "amount": 7564467
-        },
-        {
-          "tier": 2,
-          "count": 96,
-          "amount": 267132
-        },
-        {
-          "tier": 3,
-          "count": 1673,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 84785,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1638701,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 14233356,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023146",
-      "date": "2023-12-19",
-      "red": [
-        2,
-        3,
-        6,
-        11,
-        20,
-        32
-      ],
-      "blue": [
-        9
-      ],
-      "sales": 449833942,
-      "pool": 2661725786,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 9,
-          "amount": 6968340
+          "amount": 6547013
         },
         {
           "tier": 2,
           "count": 172,
-          "amount": 128743
-        },
-        {
-          "tier": 3,
-          "count": 2425,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 115408,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2065037,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 16167267,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "amount": 82652
         }
       ]
     },
     {
-      "issue": "2023145",
-      "date": "2023-12-17",
-      "red": [
-        7,
+      "issue": "26086",
+      "date": "2026-08-01",
+      "front": [
         10,
-        21,
+        11,
+        18,
         22,
-        23,
-        24
+        35
       ],
-      "blue": [
-        11
+      "back": [
+        6,
+        12
       ],
-      "sales": 488324570,
-      "pool": 2658009357,
+      "pool": 813207390,
+      "sales": 327985310,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 121,
+          "amount": 129265
+        }
+      ]
+    },
+    {
+      "issue": "26085",
+      "date": "2026-07-29",
+      "front": [
+        3,
+        4,
+        14,
+        28,
+        31
+      ],
+      "back": [
+        5,
+        7
+      ],
+      "pool": 804161465,
+      "sales": 302145325,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 2,
+          "amount": 10000000
+        },
+        {
+          "tier": 2,
+          "count": 94,
+          "amount": 149583
+        }
+      ]
+    },
+    {
+      "issue": "26084",
+      "date": "2026-07-27",
+      "front": [
+        13,
+        25,
+        30,
+        32,
+        33
+      ],
+      "back": [
+        4,
+        5
+      ],
+      "pool": 770490758,
+      "sales": 300483424,
       "prize": [
         {
           "tier": 1,
           "count": 8,
-          "amount": 8328480
+          "amount": 6621689
         },
         {
           "tier": 2,
-          "count": 195,
-          "amount": 170691
-        },
-        {
-          "tier": 3,
-          "count": 1654,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 92804,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1750392,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 13022617,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "count": 81,
+          "amount": 153450
         }
       ]
     },
     {
-      "issue": "2023144",
-      "date": "2023-12-14",
-      "red": [
-        12,
-        16,
-        17,
-        22,
-        25,
-        27
-      ],
-      "blue": [
-        8
-      ],
-      "sales": 461560620,
-      "pool": 2624782779,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 9,
-          "amount": 6787498
-        },
-        {
-          "tier": 2,
-          "count": 151,
-          "amount": 133174
-        },
-        {
-          "tier": 3,
-          "count": 2470,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 119056,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2023949,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 18853318,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023143",
-      "date": "2023-12-12",
-      "red": [
-        5,
-        7,
-        9,
+      "issue": "26083",
+      "date": "2026-07-25",
+      "front": [
+        14,
+        15,
         16,
         23,
-        30
+        26
       ],
-      "blue": [
-        15
+      "back": [
+        7,
+        9
       ],
-      "sales": 460243432,
-      "pool": 2625542196,
+      "pool": 772867560,
+      "sales": 316550987,
       "prize": [
         {
           "tier": 1,
-          "count": 32,
-          "amount": 5793556
+          "count": 8,
+          "amount": 7215569
         },
         {
           "tier": 2,
-          "count": 187,
-          "amount": 169744
-        },
-        {
-          "tier": 3,
-          "count": 2038,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 99007,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1874294,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 10778369,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "count": 135,
+          "amount": 119029
         }
       ]
     },
     {
-      "issue": "2023142",
-      "date": "2023-12-10",
-      "red": [
-        2,
-        8,
-        20,
-        21,
+      "issue": "26082",
+      "date": "2026-07-22",
+      "front": [
+        16,
+        26,
         27,
-        33
+        28,
+        34
       ],
-      "blue": [
-        14
+      "back": [
+        2,
+        6
       ],
-      "sales": 507406422,
-      "pool": 2715709193,
+      "pool": 807119056,
+      "sales": 295623678,
       "prize": [
         {
           "tier": 1,
-          "count": 3,
-          "amount": 10000000
+          "count": 5,
+          "amount": 8286251
         },
         {
           "tier": 2,
-          "count": 130,
-          "amount": 301470
-        },
-        {
-          "tier": 3,
-          "count": 1770,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 77611,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1554308,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 11097796,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "count": 76,
+          "amount": 205390
         }
       ]
     },
     {
-      "issue": "2023141",
-      "date": "2023-12-07",
-      "red": [
-        1,
+      "issue": "26081",
+      "date": "2026-07-20",
+      "front": [
         8,
-        11,
-        12,
+        16,
+        18,
+        24,
+        34
+      ],
+      "back": [
+        9,
+        12
+      ],
+      "pool": 784468404,
+      "sales": 301607097,
+      "prize": [
+        {
+          "tier": 1,
+          "count": 5,
+          "amount": 8031396
+        },
+        {
+          "tier": 2,
+          "count": 125,
+          "amount": 110123
+        }
+      ]
+    },
+    {
+      "issue": "26080",
+      "date": "2026-07-18",
+      "front": [
+        5,
+        10,
+        15,
         21,
         23
       ],
-      "blue": [
-        3
+      "back": [
+        7,
+        8
       ],
-      "sales": 493963074,
-      "pool": 2628135529,
+      "pool": 765513154,
+      "sales": 325550165,
       "prize": [
         {
           "tier": 1,
-          "count": 11,
-          "amount": 7529897
+          "count": 10,
+          "amount": 6006451
         },
         {
           "tier": 2,
-          "count": 220,
-          "amount": 158118
-        },
-        {
-          "tier": 3,
-          "count": 2152,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 99363,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1786419,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 11740953,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
+          "count": 173,
+          "amount": 75312
         }
       ]
     },
-    {
-      "issue": "2023140",
-      "date": "2023-12-05",
-      "red": [
-        3,
-        4,
-        11,
-        14,
-        30,
-        31
-      ],
-      "blue": [
-        5
-      ],
-      "sales": 480392100,
-      "pool": 2606606136,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 12,
-          "amount": 7033098
-        },
-        {
-          "tier": 2,
-          "count": 123,
-          "amount": 247938
-        },
-        {
-          "tier": 3,
-          "count": 1439,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 80290,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1564290,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 15477658,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023139",
-      "date": "2023-12-03",
-      "red": [
-        12,
-        14,
-        19,
-        21,
-        27,
-        31
-      ],
-      "blue": [
-        11
-      ],
-      "sales": 521719600,
-      "pool": 2599513870,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 7,
-          "amount": 9460351
-        },
-        {
-          "tier": 2,
-          "count": 133,
-          "amount": 293444
-        },
-        {
-          "tier": 3,
-          "count": 1763,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 84348,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1612469,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 12249401,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023138",
-      "date": "2023-11-30",
-      "red": [
-        3,
-        22,
-        28,
-        30,
-        31,
-        33
-      ],
-      "blue": [
-        4
-      ],
-      "sales": 492601986,
-      "pool": 2548652101,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 3,
-          "amount": 10000000
-        },
-        {
-          "tier": 2,
-          "count": 78,
-          "amount": 473833
-        },
-        {
-          "tier": 3,
-          "count": 1103,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 67211,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 1447228,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 12463093,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023137",
-      "date": "2023-11-28",
-      "red": [
-        3,
-        12,
-        17,
-        19,
-        23,
-        27
-      ],
-      "blue": [
-        11
-      ],
-      "sales": 492348152,
-      "pool": 2467775081,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 6,
-          "amount": 8591449
-        },
-        {
-          "tier": 2,
-          "count": 213,
-          "amount": 126459
-        },
-        {
-          "tier": 3,
-          "count": 3519,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 126051,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2247442,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 15053099,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023136",
-      "date": "2023-11-26",
-      "red": [
-        3,
-        5,
-        10,
-        21,
-        22,
-        26
-      ],
-      "blue": [
-        10
-      ],
-      "sales": 525192790,
-      "pool": 2438516168,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 21,
-          "amount": 6073140
-        },
-        {
-          "tier": 2,
-          "count": 240,
-          "amount": 117374
-        },
-        {
-          "tier": 3,
-          "count": 2795,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 112860,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2036476,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 18668600,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    },
-    {
-      "issue": "2023135",
-      "date": "2023-11-23",
-      "red": [
-        5,
-        6,
-        11,
-        13,
-        28,
-        30
-      ],
-      "blue": [
-        7
-      ],
-      "sales": 486609550,
-      "pool": 2481542330,
-      "prize": [
-        {
-          "tier": 1,
-          "count": 23,
-          "amount": 5669924
-        },
-        {
-          "tier": 2,
-          "count": 221,
-          "amount": 87150
-        },
-        {
-          "tier": 3,
-          "count": 3779,
-          "amount": 3000
-        },
-        {
-          "tier": 4,
-          "count": 151089,
-          "amount": 200
-        },
-        {
-          "tier": 5,
-          "count": 2404380,
-          "amount": 10
-        },
-        {
-          "tier": 6,
-          "count": 19159759,
-          "amount": 5
-        },
-        {
-          "tier": 7,
-          "count": 0,
-          "amount": 0
-        }
-      ]
-    }
-  ],
-  "dlt": [
     {
       "issue": "26079",
       "date": "2026-07-15",

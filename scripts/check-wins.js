@@ -107,16 +107,45 @@ async function main() {
     console.log('本次没有新的开奖可核对。');
   }
 
-  if (newWins.length > 0) {
-    if (!isConfigured()) {
-      console.log('[提示] 检测到中奖，但 SMTP 未配置，无法发送中奖邮件。');
-    } else {
-      const email = buildWinEmail(newWins);
-      await sendMail({ subject: email.subject, text: email.text });
-      console.log('已发送中奖提醒邮件 ->', email.subject);
+  // ---- 中奖提醒（可重试）：收集所有「有中奖但尚未成功通知」的记录（含上轮发送失败的）----
+  const toNotify = new Map(); // record -> wins（跨彩种合并到一条记录）
+  const collect = (w) => {
+    const list = toNotify.get(w.record) || [];
+    list.push(w);
+    toNotify.set(w.record, list);
+  };
+  newWins.forEach(collect);
+  store.records.forEach((r) => {
+    if (r.checked && r.notified !== true) {
+      // 上轮已核对且有中奖结果、但从未成功发送提醒的记录，本轮补发
+      ['ssq', 'dlt'].forEach((type) => {
+        const res = r.result && r.result[type];
+        if (res && Array.isArray(res.wins) && res.wins.length > 0) {
+          collect({ type, record: r, draw: res, typeWins: res.wins });
+        }
+      });
     }
-  } else {
+  });
+
+  if (toNotify.size === 0) {
     console.log('本次核对没有中奖。');
+    return;
+  }
+  if (!isConfigured()) {
+    console.log('[提示] 检测到中奖，但 SMTP 未配置，无法发送中奖邮件。结果已保存，配置后下轮会补发提醒。');
+    return;
+  }
+  const email = buildWinEmail([...toNotify.entries()].flatMap(([record, wins]) => wins));
+  try {
+    await sendMail({ subject: email.subject, text: email.text });
+    toNotify.forEach((_, record) => { record.notified = true; });
+    save(store);
+    console.log('已发送中奖提醒邮件 ->', email.subject);
+  } catch (e) {
+    // 发送失败：不标记 notified，下轮运行会自动补发；核对结果已保存不受影响
+    console.error(`中奖提醒邮件发送失败（结果已保存，下轮将补发）: ${e.message}`);
+    save(store);
+    process.exitCode = 1;
   }
 }
 

@@ -11,6 +11,11 @@ on:
 permissions:
   contents: write
 
+# 与「每日推送」工作流共用一把锁：两者都会改 picks-history.json，串行执行避免互相覆盖
+concurrency:
+  group: picks-history
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -35,7 +40,7 @@ jobs:
       - name: 核对推荐号码是否中奖（中奖则发邮件提醒）
         run: node scripts/check-wins.js
 
-      - name: 提交核对结果
+      - name: 提交核对结果（push 失败自动 rebase 重试）
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -44,7 +49,16 @@ jobs:
             echo "没有需要提交的核对结果变更。"
           else
             git commit -m "chore: 更新开奖核对结果 [skip ci]"
-            git push
+            for i in 1 2 3; do
+              if git push; then
+                echo "push 成功（第 $i 次尝试）"
+                exit 0
+              fi
+              echo "push 失败（第 $i 次），rebase 远端后重试..."
+              git pull --rebase origin main || git rebase --abort
+            done
+            echo "连续 3 次 push 失败，放弃。"
+            exit 1
           fi
 
 # 开奖数据源：gudaoxuri/lottery_history（raw.githubusercontent.com），GitHub Actions 境外服务器可稳定访问。

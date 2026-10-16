@@ -47,6 +47,12 @@ const META = {
   META.ssq.realCount = ssq.length;
   META.dlt.realCount = dlt.length;
 
+  // 数据生成时间（北京时间）：供前端展示「数据截至」，避免陈旧数据冒充最新
+  META.generatedAt = new Date(Date.now() + 8 * 3600 * 1000)
+    .toISOString()
+    .slice(0, 16)
+    .replace('T', ' ') + '（北京时间）';
+
   const header =
     `/* ============================================================\n` +
     `   开运 · 彩票助手  —  官方真实开奖数据\n` +

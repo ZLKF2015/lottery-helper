@@ -10,9 +10,11 @@ const SOURCES = {
   dlt: 'https://raw.githubusercontent.com/gudaoxuri/lottery_history/main/data/dlt.json',
 };
 
+const REQUEST_TIMEOUT_MS = 15000;
+
 function get(url) {
   return new Promise((resolve, reject) => {
-    https
+    const req = https
       .get(url, { headers: { 'User-Agent': 'lottery-helper' } }, (res) => {
         if (res.statusCode !== 200) {
           res.resume();
@@ -23,6 +25,10 @@ function get(url) {
         res.on('end', () => resolve(data));
       })
       .on('error', reject);
+    // 超时保护：避免 Actions 里网络挂起拖到 6 小时 job 上限
+    req.setTimeout(REQUEST_TIMEOUT_MS, () => {
+      req.destroy(new Error(`请求超时（${REQUEST_TIMEOUT_MS}ms）@ ${url}`));
+    });
   });
 }
 
@@ -58,9 +64,20 @@ async function fetchResults() {
 }
 
 // 找出 drawDate >= 推荐日期 的最早一期（即该次推荐之后的首次开奖）
+// 断期护栏：若匹配到的开奖比推荐日晚超过 GAP_LIMIT_DAYS 天，说明上游数据可能缺期，
+// 此时返回 null 留待下次核对（绝不把记录错误地判到远晚的期次上）。
+const GAP_LIMIT_DAYS = 10;
+
+function daysBetween(a, b) {
+  return (new Date(b).getTime() - new Date(a).getTime()) / 86400000;
+}
+
 function firstDrawOnOrAfter(results, dateStr) {
   for (const r of results) {
-    if (r.drawDate >= dateStr) return r;
+    if (r.drawDate >= dateStr) {
+      if (daysBetween(dateStr, r.drawDate) > GAP_LIMIT_DAYS) return null; // 疑似上游断期
+      return r;
+    }
   }
   return null;
 }

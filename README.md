@@ -54,7 +54,7 @@ node scripts/test-wins.js
    | `SMTP_PORT` | 端口 | `465` |
    | `SMTP_USER` | 发件/登录账号 | `你的QQ号@qq.com` |
    | `SMTP_FROM` | 发件人（同 USER） | `你的QQ号@qq.com` |
-   | `SMTP_TO` | 收件人 | `951038180@qq.com` |
+   | `SMTP_TO` | 收件人 | `你的QQ号@qq.com` |
    | `SMTP_PASS` | QQ 邮箱 SMTP 授权码 | （见下） |
    > 授权码 ≠ 邮箱密码。获取：QQ邮箱网页版 → 设置 → 账户 → 开启「POP3/SMTP服务」→ 生成授权码。
 2. **就这些**。GitHub Actions 会每天北京时间 20:00 自动向 Secrets 中设置的收件人发送 5 注双色球 + 5 注大乐透。
@@ -65,7 +65,9 @@ node scripts/test-wins.js
 ### 两个限制说明
 
 - **网站在线托管（Pages）**：免费计划的 GitHub Pages 只支持**公开仓库**。若你想让网站有个在线地址（`https://<用户名>.github.io/<仓库名>/`），把仓库改成 Public 后到 `Settings → Pages` 开启即可（本项目代码不含任何密钥，公开是安全的）。私有仓库则无法用免费 Pages，网站仍可在本地 `node server.js` 查看。
-- **云端数据刷新**：`fetch-official.js` 依赖中彩网/500彩票，仅国内 IP 可访问，GitHub 境外服务器会被反爬（403）。因此**开奖数据的每日刷新不在云端进行**，交给本机的定时任务；而**机选邮件为纯随机、不依赖开奖数据**，云端可正常发送。
+- **云端数据刷新**：`fetch-official.js` 依赖中彩网/500彩票，仅国内 IP 可访问，GitHub 境外服务器会被反爬（403）。因此**开奖数据的每日刷新不在云端进行**，需要在本机定期跑 `npm run fetch` 刷新 `data.js`（例如 Windows 任务计划程序每周一次：`node C:\workspace\lottery-helper\scripts\fetch-official.js`）；而**机选邮件为纯随机、不依赖开奖数据**，云端可正常发送。
+- **数据窗口**：站点内置/展示的并非「全部历史」，而是滚动窗口（双色球约 400 期、大乐透自 25001 期起）。页面会显示「数据截至」时间——若时间过旧，请在本机跑一次 `npm run fetch`。
+- **推送时间**：GitHub Actions 的 cron 在整点附近有排队延迟，推送实际可能在北京时间 20:00 之后数小时内到达（常见于凌晨），属正常现象。
 
 ## 文件结构
 
