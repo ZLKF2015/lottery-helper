@@ -10,6 +10,7 @@ const { load, save } = require('./picks-store');
 const { fetchResults, firstDrawOnOrAfter } = require('./results-lib');
 const { judge } = require('./prize');
 const { isConfigured, sendMail } = require('./mailer');
+const T = require('./email-template');
 
 const META = {
   ssq: { name: '双色球', redLabel: '红球', blueLabel: '蓝球' },
@@ -61,6 +62,108 @@ function buildWinEmail(newWins) {
     subject: `🎉 中奖提醒：你的推荐号码中了 ${totalWins} 注！`,
     text: lines.join('\n'),
   };
+}
+
+// ---------- HTML 版面（金红夜宴） ----------
+// 奖级→固定奖金（用于徽章金额展示；浮动奖一二等不显示金额）
+const FIXED_PRIZE = {
+  ssq: { 3: '3,000', 4: '200', 5: '10', 6: '5' },
+  dlt: { 3: '10,000', 4: '3,000', 5: '300', 6: '200', 7: '100', 8: '15', 9: '5' },
+};
+
+function winBadge(type, tier, name) {
+  const amount = (FIXED_PRIZE[type] || {})[tier];
+  return (
+    `<span style="display:inline-block;padding:4px 12px;background-color:${T.C.badgeBg};` +
+    `color:${T.C.badgeText};border-radius:20px;font-size:13px;font-weight:700;white-space:nowrap;">` +
+    `${T.esc(name)}${amount ? ' ¥' + amount : ''}</span>`
+  );
+}
+
+// 一个彩种的获奖卡片：draw={issue,drawDate,red,blue}，typeWins=[{idx,name,tier,pick,redMatch,blueMatch}]
+function winCard(type, draw, typeWins) {
+  const g = T.GAME[type];
+  const drawLine =
+    `<tr><td style="padding:6px 16px;">` +
+    `<span style="font-size:12px;color:${T.C.muted};">开奖号码　</span>` +
+    `<span style="font-size:14px;color:${T.C.text};font-weight:700;font-family:Georgia,serif;">` +
+    `${draw.red.map(T.pad2).join(' · ')}</span>` +
+    `<span style="font-size:14px;color:${g.blueCls === 'red' ? '#ff6a7a' : '#5b8dff'};font-weight:700;font-family:Georgia,serif;">` +
+    ` + ${draw.blue.map(T.pad2).join(' · ')}</span></td></tr>`;
+
+  const winRows = typeWins.map((win) => {
+    const balls = T.ballRow(win.pick.red, win.pick.blue, g.redCls, g.blueCls, 'sm', 3)
+      .replace('<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"',
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="70%"');
+    return (
+      `<tr><td style="padding:10px 16px 4px;border-top:1px solid ${T.C.lineSoft};">` +
+      `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>` +
+      `<td style="vertical-align:middle;">${balls}</td>` +
+      `<td align="right" style="vertical-align:middle;">${winBadge(type, win.tier, win.name)}</td>` +
+      `</tr><tr><td colspan="2" style="padding-top:6px;font-size:11px;color:${T.C.faint};">` +
+      `第 ${win.idx} 注 · 命中 ${g.redLabel}${win.redMatch} + ${g.blueLabel}${win.blueMatch}</td></tr>` +
+      `</table></td></tr>`
+    );
+  }).join('');
+
+  return (
+    `<tr><td style="padding:12px 26px 5px;">` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" ` +
+    `style="background-color:rgba(233,185,73,0.08);border:1px solid rgba(233,185,73,0.35);border-radius:12px;">` +
+    `<tr><td style="padding:14px 16px 4px;">` +
+    `<span style="font-size:15px;color:${T.C.goldBright};font-weight:700;">${g.icon} ${g.name} · 第 ${T.esc(draw.issue)} 期</span>` +
+    `<span style="float:right;font-size:12px;color:${T.C.muted};">开奖日 ${T.esc(draw.drawDate)}</span>` +
+    `</td></tr>` +
+    drawLine + winRows +
+    `</table></td></tr>`
+  );
+}
+
+function buildWinEmailHtml(newWins) {
+  const totalWins = newWins.reduce((s, w) => s + w.typeWins.length, 0);
+  // 合计奖金：只计固定奖级；一二等浮动奖不计入（显示“含浮动奖”）
+  let fixedSum = 0;
+  let hasFloating = false;
+  for (const w of newWins) {
+    for (const win of w.typeWins) {
+      const amt = (FIXED_PRIZE[w.type] || {})[win.tier];
+      if (amt) fixedSum += Number(String(amt).replace(/,/g, ''));
+      else hasFloating = true;
+    }
+  }
+  const sumText =
+    '合计 ' + (fixedSum > 0 ? `¥${fixedSum.toLocaleString('zh-CN')}` : '奖金以官方派奖为准') +
+    (hasFloating ? '（含浮动奖）' : '');
+
+  // 按彩种分组渲染卡片（保持 newWins 的出现顺序）
+  const cards = newWins.map((w) => winCard(w.type, w.draw, w.typeWins)).join('');
+
+  const hero =
+    `<tr><td style="padding:30px 30px 24px;text-align:center;background-color:${T.C.luckyDeep};` +
+    `background-image:linear-gradient(135deg,${T.C.lucky} 0%,${T.C.luckyDeep} 60%,#a01330 100%);">` +
+    `<div style="font-size:38px;line-height:1;">🎉</div>` +
+    `<div style="padding-top:10px;font-family:'Noto Serif SC','Songti SC',serif;font-size:24px;color:#ffffff;` +
+    `font-weight:700;letter-spacing:2px;">恭喜，中奖啦！</div>` +
+    `<div style="padding-top:6px;font-size:13px;color:#ffe6a8;">你的机选号码命中 <b style="font-size:16px;">${totalWins}</b> 注 · ${T.esc(sumText)}</div>` +
+    `</td></tr>`;
+
+  const tip =
+    `<tr><td style="padding:8px 26px 4px;">` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" ` +
+    `style="background-color:${T.C.rowBg};border-radius:10px;"><tr>` +
+    `<td style="padding:12px 16px;font-size:12px;color:${T.C.muted};line-height:1.8;">` +
+    `💡 <b style="color:${T.C.goldBright};">兑奖提醒</b>：小奖可在全国任意彩票店兑付，` +
+    `<b style="color:#ffe6a8;">兑奖期限 60 天</b>，别让奖金过期。以上为程序按官方开奖号码自动核对结果，实际以官方兑奖为准。` +
+    `</td></tr></table></td></tr>`;
+
+  const inner =
+    hero + cards + tip +
+    `<tr><td style="padding:16px 30px 26px;">` +
+    `<div style="font-size:11px;color:${T.C.muted};line-height:1.7;">彩票开奖完全随机，本次中奖属于随机运气，不代表任何方法有效。请理性购彩、量力而行。</div>` +
+    `<div style="padding-top:8px;font-size:11px;color:${T.C.faint};">开运·彩票助手 自动核对推送</div>` +
+    `</td></tr>`;
+
+  return T.pageWrap(inner, `恭喜！你的机选号码中了 ${totalWins} 注 🎉`);
 }
 
 async function main() {
@@ -135,9 +238,11 @@ async function main() {
     console.log('[提示] 检测到中奖，但 SMTP 未配置，无法发送中奖邮件。结果已保存，配置后下轮会补发提醒。');
     return;
   }
-  const email = buildWinEmail([...toNotify.entries()].flatMap(([record, wins]) => wins));
+  const winItems = [...toNotify.entries()].flatMap(([record, wins]) => wins);
+  const email = buildWinEmail(winItems);
+  email.html = buildWinEmailHtml(winItems);
   try {
-    await sendMail({ subject: email.subject, text: email.text });
+    await sendMail({ subject: email.subject, text: email.text, html: email.html });
     toNotify.forEach((_, record) => { record.notified = true; });
     save(store);
     console.log('已发送中奖提醒邮件 ->', email.subject);
@@ -149,7 +254,7 @@ async function main() {
   }
 }
 
-module.exports = { checkType, buildWinEmail, main };
+module.exports = { checkType, buildWinEmail, buildWinEmailHtml, main };
 
 if (require.main === module) {
   main().catch((e) => {

@@ -43,8 +43,10 @@ function isConfigured(cfg) {
   );
 }
 
-// 发送邮件：{ subject, text, to? }。未配置时抛错，由调用方决定是否跳过。
-async function sendMail({ subject, text, to }) {
+// 发送邮件：{ subject, text, html?, to? }。未配置时抛错，由调用方决定是否跳过。
+// text + html 双部分：支持 HTML 的客户端（QQ 邮箱等）展示版式，
+// 不支持的自动回退纯文本（nodemailer multipart/alternative 自动处理）。
+async function sendMail({ subject, text, html, to }) {
   const cfg = loadConfig();
   if (!isConfigured(cfg)) throw new Error('SMTP 未配置（缺少授权码/账号/收件人）');
   const nodemailer = require('nodemailer');
@@ -54,12 +56,14 @@ async function sendMail({ subject, text, to }) {
     secure: true,
     auth: { user: cfg.user, pass: cfg.pass },
   });
-  await transporter.sendMail({
+  const mail = {
     from: cfg.from || cfg.user,
     to: to || cfg.to,
     subject,
     text,
-  });
+  };
+  if (html) mail.html = html;
+  await transporter.sendMail(mail);
   return { to: to || cfg.to, subject };
 }
 
