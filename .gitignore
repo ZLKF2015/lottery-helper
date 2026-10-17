@@ -4,5 +4,8 @@ scripts/mail-config.json
 cache/
 node_modules/
 
+# 数据订正的本地备份（入库前快照，不入库）
+picks-history.json.*.bak
+
 # 本地工作记忆（非项目文件）
 .workbuddy/
