@@ -9,3 +9,6 @@ picks-history.json.*.bak
 
 # 本地工作记忆（非项目文件）
 .workbuddy/
+
+# 邮件版面本地预览（开发用）
+.email-preview/
