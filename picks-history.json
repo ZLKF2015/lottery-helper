@@ -217,7 +217,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-07-18-mrp4vr86",
@@ -634,7 +635,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第4注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第4注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-07-19-mrrufwl5",
@@ -1027,7 +1029,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-07-21-mruqdqh0",
@@ -1222,7 +1225,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-07-22-mrw5xsu9",
@@ -1417,7 +1421,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-07-23-mrxlpgv9",
@@ -2028,7 +2033,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-07-26-ms1unq1b",
@@ -2619,7 +2625,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-07-29-ms66g4ny",
@@ -3012,7 +3019,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-07-31-ms91bthf",
@@ -3381,7 +3389,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-08-02-msbupzfi",
@@ -3815,7 +3824,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [第1注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [第1注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-04-mserc7w5",
@@ -4208,7 +4218,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-06-mshm2qac",
@@ -4427,7 +4438,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-07-msiz1jqd",
@@ -4666,7 +4678,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-08-mskdwoi4",
@@ -5059,7 +5072,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-08-10-msn9k6sw",
@@ -5626,7 +5640,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第4注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第4注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-13-msrjz5vc",
@@ -5865,7 +5880,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）]；改判 [第2注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）]；改判 [第2注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-14-mssz7kdg",
@@ -6302,7 +6318,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）]；改判 [第5注 3+0 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）]；改判 [第5注 3+0 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-16-msvt1rdd",
@@ -7507,7 +7524,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 1+2 七等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 1+2 七等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-22-mt4doqup",
@@ -8486,7 +8504,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-08-28-mtc2snz4",
@@ -8701,7 +8720,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-08-29-mtdi8bpo",
@@ -8940,7 +8960,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [第1注 0+2 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [第1注 0+2 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-30-mtelsupx",
@@ -9199,7 +9220,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 2+1 八等奖→九等奖；第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 2+1 八等奖→九等奖；第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-08-31-mtg12e4w",
@@ -9418,7 +9440,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-01-mthlxi8n",
@@ -9831,7 +9854,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第2注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-03-mtkb61az",
@@ -10071,7 +10095,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 0+2 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第2注 0+2 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-04-mtlq9pix",
@@ -10812,7 +10837,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-09-08-mtrj00ht",
@@ -11031,7 +11057,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 3+1 七等奖→八等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 3+1 七等奖→八等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-09-mtsvxg9z",
@@ -11840,7 +11867,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [第1注 1+2 七等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第5注 1+1（原判八等奖）]；改判 [第1注 1+2 七等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-12-mtyjdo4a",
@@ -12447,7 +12475,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-09-16-mu2wmkue",
@@ -12666,7 +12695,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 4+0 六等奖→七等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第5注 4+0 六等奖→七等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-17-mu4bt6ap",
@@ -13103,7 +13133,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第4注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第4注 1+1（原判八等奖）；第5注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-19-mu75tnba",
@@ -13322,7 +13353,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第3注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-19-mu8k7wzq",
@@ -14459,7 +14491,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第1注 3+0 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第1注 3+0 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-09-26-muh7jmoo",
@@ -15026,7 +15059,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-09-29-mulnar5u",
@@ -15221,7 +15255,8 @@
           ],
           "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-09-30-mumze2vp",
@@ -16010,7 +16045,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-10-04-musl3dzw",
@@ -16601,7 +16637,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-08-muygmt2p",
@@ -17018,7 +17055,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第4注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [无]；改判 [第4注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-10-10-mv1adnd9",
@@ -17237,7 +17275,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第1注 1+1（原判八等奖）]；改判 [无]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-10-11-mv2nnaz7",
@@ -17650,7 +17689,8 @@
             }
           ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-13-mv5qyrq5",
@@ -18087,7 +18127,8 @@
         }
       },
       "corrected": true,
-      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [第1注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。"
+      "correctedNote": "2026-10-17 按大乐透官方 9 级表订正：移除误报 [第3注 1+1（原判八等奖）]；改判 [第1注 2+1 八等奖→九等奖]。原始判定见 result.dlt._origWins。",
+      "notified": true
     },
     {
       "id": "2026-10-15-mv8cuflf",
