@@ -18268,7 +18268,7 @@
           ]
         }
       ],
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26118",
@@ -18326,8 +18326,25 @@
               }
             }
           ]
+        },
+        "dlt": {
+          "issue": "26118",
+          "drawDate": "2026-10-17",
+          "red": [
+            2,
+            9,
+            21,
+            26,
+            32
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-16-mv9rtzsc",
@@ -18468,7 +18485,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26118",
+          "drawDate": "2026-10-17",
+          "red": [
+            2,
+            9,
+            21,
+            26,
+            32
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-17-mvb6nhcn",
@@ -18609,7 +18643,24 @@
         }
       ],
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26118",
+          "drawDate": "2026-10-17",
+          "red": [
+            2,
+            9,
+            21,
+            26,
+            32
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-17-mvcjqeo8",
@@ -18751,7 +18802,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26118",
+          "drawDate": "2026-10-17",
+          "red": [
+            2,
+            9,
+            21,
+            26,
+            32
+          ],
+          "blue": [
+            6,
+            12
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-18-mvdzx05v",
