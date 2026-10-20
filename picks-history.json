@@ -19052,7 +19052,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26119",
@@ -19069,8 +19069,46 @@
             4
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26119",
+          "drawDate": "2026-10-19",
+          "red": [
+            3,
+            6,
+            20,
+            24,
+            32
+          ],
+          "blue": [
+            4,
+            7
+          ],
+          "wins": [
+            {
+              "idx": 3,
+              "tier": 8,
+              "name": "八等奖",
+              "redMatch": 3,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  3,
+                  6,
+                  12,
+                  20,
+                  22
+                ],
+                "blue": [
+                  3,
+                  4
+                ]
+              }
+            }
+          ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-20-mvfll9aq",
