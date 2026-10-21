@@ -19250,7 +19250,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26120",
+          "drawDate": "2026-10-20",
+          "red": [
+            13,
+            14,
+            16,
+            18,
+            20,
+            31
+          ],
+          "blue": [
+            3
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-21-mvgwyuq2",
