@@ -19249,7 +19249,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26120",
@@ -19264,6 +19264,22 @@
           ],
           "blue": [
             3
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26120",
+          "drawDate": "2026-10-21",
+          "red": [
+            1,
+            6,
+            10,
+            15,
+            32
+          ],
+          "blue": [
+            3,
+            4
           ],
           "wins": []
         }
@@ -19409,7 +19425,46 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26120",
+          "drawDate": "2026-10-21",
+          "red": [
+            1,
+            6,
+            10,
+            15,
+            32
+          ],
+          "blue": [
+            3,
+            4
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  7,
+                  15,
+                  18,
+                  20
+                ],
+                "blue": [
+                  3,
+                  9
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-22-mvid09s1",
