@@ -19621,7 +19621,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26121",
@@ -19636,6 +19636,22 @@
           ],
           "blue": [
             2
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26121",
+          "drawDate": "2026-10-24",
+          "red": [
+            6,
+            8,
+            19,
+            24,
+            25
+          ],
+          "blue": [
+            1,
+            8
           ],
           "wins": []
         }
@@ -19781,7 +19797,46 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26121",
+          "drawDate": "2026-10-24",
+          "red": [
+            6,
+            8,
+            19,
+            24,
+            25
+          ],
+          "blue": [
+            1,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  8,
+                  14,
+                  17,
+                  19,
+                  26
+                ],
+                "blue": [
+                  1,
+                  12
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-24-mvl7ldfy",
@@ -19923,7 +19978,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26121",
+          "drawDate": "2026-10-24",
+          "red": [
+            6,
+            8,
+            19,
+            24,
+            25
+          ],
+          "blue": [
+            1,
+            8
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-24-mvmkmwor",
@@ -20065,7 +20137,46 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26121",
+          "drawDate": "2026-10-24",
+          "red": [
+            6,
+            8,
+            19,
+            24,
+            25
+          ],
+          "blue": [
+            1,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 3,
+              "blueMatch": 0,
+              "pick": {
+                "red": [
+                  6,
+                  7,
+                  15,
+                  19,
+                  24
+                ],
+                "blue": [
+                  6,
+                  11
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-25-mvo0hfim",
