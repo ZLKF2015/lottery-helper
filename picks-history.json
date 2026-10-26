@@ -19796,7 +19796,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26121",
@@ -19834,6 +19834,22 @@
               }
             }
           ]
+        },
+        "ssq": {
+          "issue": "26122",
+          "drawDate": "2026-10-25",
+          "red": [
+            1,
+            2,
+            4,
+            17,
+            19,
+            30
+          ],
+          "blue": [
+            9
+          ],
+          "wins": []
         }
       },
       "notified": true
@@ -19977,7 +19993,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26121",
@@ -19992,6 +20008,22 @@
           "blue": [
             1,
             8
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26122",
+          "drawDate": "2026-10-25",
+          "red": [
+            1,
+            2,
+            4,
+            17,
+            19,
+            30
+          ],
+          "blue": [
+            9
           ],
           "wins": []
         }
@@ -20136,7 +20168,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26121",
@@ -20170,6 +20202,43 @@
                 "blue": [
                   6,
                   11
+                ]
+              }
+            }
+          ]
+        },
+        "ssq": {
+          "issue": "26122",
+          "drawDate": "2026-10-25",
+          "red": [
+            1,
+            2,
+            4,
+            17,
+            19,
+            30
+          ],
+          "blue": [
+            9
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  7,
+                  11,
+                  15,
+                  22,
+                  25
+                ],
+                "blue": [
+                  9
                 ]
               }
             }
@@ -20318,7 +20387,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26122",
+          "drawDate": "2026-10-25",
+          "red": [
+            1,
+            2,
+            4,
+            17,
+            19,
+            30
+          ],
+          "blue": [
+            9
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-27-mvpll9zr",
