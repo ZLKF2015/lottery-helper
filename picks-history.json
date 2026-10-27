@@ -20386,7 +20386,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26122",
@@ -20401,6 +20401,22 @@
           ],
           "blue": [
             9
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26122",
+          "drawDate": "2026-10-26",
+          "red": [
+            2,
+            14,
+            21,
+            22,
+            24
+          ],
+          "blue": [
+            2,
+            12
           ],
           "wins": []
         }
