@@ -20561,8 +20561,83 @@
         }
       ],
       "sent": false,
-      "checked": false,
-      "result": null
+      "checked": true,
+      "result": {
+        "ssq": {
+          "issue": "26123",
+          "drawDate": "2026-10-27",
+          "red": [
+            4,
+            5,
+            20,
+            21,
+            26,
+            30
+          ],
+          "blue": [
+            12
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 0,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  6,
+                  10,
+                  25,
+                  27,
+                  28,
+                  33
+                ],
+                "blue": [
+                  12
+                ]
+              }
+            },
+            {
+              "idx": 4,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  8,
+                  13,
+                  20,
+                  27,
+                  29
+                ],
+                "blue": [
+                  12
+                ]
+              }
+            }
+          ]
+        },
+        "dlt": {
+          "issue": "26123",
+          "drawDate": "2026-10-28",
+          "red": [
+            13,
+            18,
+            19,
+            20,
+            28
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": []
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-28-mvqzf7he",
@@ -20704,7 +20779,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26123",
+          "drawDate": "2026-10-28",
+          "red": [
+            13,
+            18,
+            19,
+            20,
+            28
+          ],
+          "blue": [
+            9,
+            11
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-10-29-mvsfqtzb",
