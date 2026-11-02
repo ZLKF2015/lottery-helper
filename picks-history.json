@@ -21172,7 +21172,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26124",
@@ -21189,8 +21189,46 @@
             9
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26125",
+          "drawDate": "2026-11-01",
+          "red": [
+            4,
+            6,
+            10,
+            15,
+            26,
+            27
+          ],
+          "blue": [
+            11
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  10,
+                  13,
+                  14,
+                  18,
+                  19
+                ],
+                "blue": [
+                  11
+                ]
+              }
+            }
+          ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-10-31-mvv9wrge",
@@ -21331,7 +21369,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26124",
@@ -21346,6 +21384,22 @@
           "blue": [
             1,
             9
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26125",
+          "drawDate": "2026-11-01",
+          "red": [
+            4,
+            6,
+            10,
+            15,
+            26,
+            27
+          ],
+          "blue": [
+            11
           ],
           "wins": []
         }
@@ -21491,7 +21545,24 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26125",
+          "drawDate": "2026-11-01",
+          "red": [
+            4,
+            6,
+            10,
+            15,
+            26,
+            27
+          ],
+          "blue": [
+            11
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-02-mvy4moo3",
