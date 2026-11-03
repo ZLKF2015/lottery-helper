@@ -21544,7 +21544,7 @@
         }
       ],
       "sent": false,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26125",
@@ -21559,6 +21559,22 @@
           ],
           "blue": [
             11
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26125",
+          "drawDate": "2026-11-02",
+          "red": [
+            12,
+            13,
+            23,
+            25,
+            29
+          ],
+          "blue": [
+            7,
+            10
           ],
           "wins": []
         }
@@ -21704,7 +21720,46 @@
       ],
       "sent": false,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26125",
+          "drawDate": "2026-11-02",
+          "red": [
+            12,
+            13,
+            23,
+            25,
+            29
+          ],
+          "blue": [
+            7,
+            10
+          ],
+          "wins": [
+            {
+              "idx": 4,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  5,
+                  7,
+                  8,
+                  13,
+                  25
+                ],
+                "blue": [
+                  8,
+                  10
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-03-mvzs6uwp",
