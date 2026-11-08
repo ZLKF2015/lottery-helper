@@ -43,6 +43,13 @@ node scripts/check-wins.js
 node scripts/test-wins.js
 ```
 
+## 累计购彩账本
+
+推送邮件与中奖提醒邮件都会附带一份「累计购彩账本」：累计购买金额、购买次数、累计中奖金额、中奖次数（附净投入估算）。
+全部从 `picks-history.json` 纯推导（`scripts/stats.js`），不新增存储字段：
+- 购买：每条已推送成功的记录 = 双色球 5 注 + 大乐透 5 注 = **20 元/天**；
+- 中奖：固定奖级按官方金额累计；一/二等奖为浮动奖（金额随期变动），只计入注数、金额不计入。
+
 ## 部署到 GitHub（电脑关机也能收推送）
 
 把本仓库推到 GitHub 后：
@@ -80,7 +87,9 @@ picks-history.json  # 每日推荐号码 + 开奖核对结果（云端 Actions �
 scripts/
   fetch-lib.js      # 官方数据抓取库（中彩网 / 500）
   fetch-official.js # 重新生成 data.js
-  gen-picks.js      # 机选号码生成器
+  gen-picks.js      # 机选号码生成器 + 邮件正文渲染
+  email-template.js # HTML 邮件模板（金红夜宴风格）
+  stats.js          # 累计购彩账本统计（纯推导）
   prize.js          # 中奖等级判定（与前端 app.js 一致）
   mailer.js         # 共享 SMTP 配置读取与发信
   picks-store.js    # picks-history.json 读写

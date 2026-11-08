@@ -5,10 +5,11 @@
    顺序说明：先落盘再发信——即使发信失败，号码也已保存，开奖后仍会正常核对。 */
 'use strict';
 
-const { buildEmailBody } = require('./gen-picks');
+const { buildEmailBody, buildEmailHtml, TEXT_TAIL } = require('./gen-picks');
 const { isConfigured, sendMail } = require('./mailer');
-const { appendRecord, markSent } = require('./picks-store');
+const { appendRecord, markSent, load } = require('./picks-store');
 const { fetchResults } = require('./results-lib');
+const { computeStats, formatStatsText } = require('./stats');
 
 // 尽力获取最新开奖（供邮件「上期开奖」区块）：失败返回空对象，绝不阻塞推送
 async function tryFetchLatest() {
@@ -35,6 +36,13 @@ async function main() {
   // 先落盘（sent:false），确保邮件里的号码一定有核对资格
   const rec = appendRecord(email.picks);
   console.log(`已保存推荐记录 ${rec.id}（双色球 ${rec.ssq.length} 注 + 大乐透 ${rec.dlt.length} 注）到 picks-history.json`);
+
+  // 累计购彩账本：当天这条刚落盘（sent 未置 true），用 includeId 计入后生成统计；
+  // 账本行插在落款之前，HTML 区块由 buildEmailHtml 渲染
+  const stats = computeStats(load(), rec.id);
+  const statsText = formatStatsText(stats);
+  email.text = email.text.replace(TEXT_TAIL, statsText + '\n\n' + TEXT_TAIL);
+  email.html = buildEmailHtml(email.picks, email.date, latest, stats);
 
   await sendMail({ subject: email.subject, text: email.text, html: email.html });
   markSent(rec);

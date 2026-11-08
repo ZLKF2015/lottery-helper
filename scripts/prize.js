@@ -10,6 +10,14 @@ const TIER_NAMES = {
   dlt: ['', '一等奖', '二等奖', '三等奖', '四等奖', '五等奖', '六等奖', '七等奖', '八等奖', '九等奖'],
 };
 
+
+// 固定奖级奖金（官方单注固定金额；一/二等奖为浮动奖，金额随期变动，不在此列）
+// 权威源：check-wins/winBadge 与 stats 统计共用，勿在别处另建副本
+const FIXED_PRIZE = {
+  ssq: { 3: 3000, 4: 200, 5: 10, 6: 5 },
+  dlt: { 3: 10000, 4: 3000, 5: 300, 6: 200, 7: 100, 8: 15, 9: 5 },
+};
+
 function tierOf(type, redMatch, blueMatch) {
   if (type === 'ssq') {
     if (redMatch === 6 && blueMatch === 1) return 1;
@@ -58,4 +66,4 @@ function judge(type, pick, result) {
   return { tier, name: tierName(type, tier), redMatch, blueMatch };
 }
 
-module.exports = { tierOf, tierName, countMatch, judge, TIER_NAMES };
+module.exports = { tierOf, tierName, countMatch, judge, TIER_NAMES, FIXED_PRIZE };

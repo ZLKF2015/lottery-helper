@@ -80,7 +80,7 @@ function lastDrawSection(latest) {
   );
 }
 
-function buildEmailHtml(picks, dateStr, latest) {
+function buildEmailHtml(picks, dateStr, latest, stats) {
   const ssqRows = picks.ssq.map((p, i) => T.pickRow(i + 1, p, 'ssq')).join('');
   const dltRows = picks.dlt.map((p, i) => T.pickRow(i + 1, p, 'dlt')).join('');
   const inner =
@@ -88,12 +88,15 @@ function buildEmailHtml(picks, dateStr, latest) {
     T.gameHead('ssq') + ssqRows +
     T.gameHead('dlt') + dltRows +
     lastDrawSection(latest) +
+    T.statsBlock(stats) +
     T.disclaimerFooter('自动推送');
   return T.pageWrap(inner, `今日机选号码已生成：双色球 5 注 + 大乐透 5 注，祝你好运 🍀`);
 }
 
 // latest：可选的上期开奖数据 { ssq, dlt }（由 send-picks.js 尽力获取，失败不影响发送）
-function buildEmailBody(latest) {
+const TEXT_TAIL = '—— 开运·彩票助手 自动推送';
+
+function buildEmailBody(latest, statsText) {
   const ssq = genPicks('ssq', 5);
   const dlt = genPicks('dlt', 5);
   const date = beijingDateStr();
@@ -103,13 +106,14 @@ function buildEmailBody(latest) {
     text:
       `今日机选推荐（仅供娱乐参考，彩票完全随机，请理性购彩、量力而行）：\n\n` +
       formatPicks('ssq', ssq) + '\n\n' + formatPicks('dlt', dlt) +
-      '\n\n—— 开运·彩票助手 自动推送',
+      '\n\n' + (statsText ? statsText + '\n\n' + TEXT_TAIL : TEXT_TAIL),
     html: buildEmailHtml(picks, date, latest),
     picks,
+    date,
   };
 }
 
-module.exports = { genPicks, formatPicks, buildEmailBody, buildEmailHtml, lastDrawSection, META, pick };
+module.exports = { genPicks, formatPicks, buildEmailBody, buildEmailHtml, lastDrawSection, META, pick, TEXT_TAIL };
 
 if (require.main === module) {
   console.log(buildEmailBody().text);

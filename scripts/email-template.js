@@ -141,4 +141,33 @@ function gameHead(game) {
   );
 }
 
-module.exports = { C, GAME, esc, pad2, ball, ballRow, pickRow, gameHead, header, pageWrap, disclaimerFooter };
+// ---------- 累计购彩账本 ----------
+// stats = { purchaseCount, purchaseAmount, winCount, winAmount, net }
+function statsBlock(stats) {
+  if (!stats) return '';
+  const money = (n) => '¥' + Number(n).toLocaleString('zh-CN');
+  const cell = (label, value) =>
+    `<td style="padding:12px 8px;text-align:center;">` +
+    `<div style="font-size:20px;color:${C.goldBright};font-weight:700;font-family:Georgia,serif;">${value}</div>` +
+    `<div style="padding-top:4px;font-size:11px;color:${C.muted};">${label}</div></td>`;
+  return (
+    `<tr><td style="padding:0 30px 22px;">` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" ` +
+    `style="background-color:rgba(233,185,73,0.06);border:1px solid ${C.lineGold};border-radius:12px;">` +
+    `<tr><td style="padding:12px 16px 4px;font-size:13px;color:${C.gold};font-weight:700;">📊 累计购彩账本</td></tr>` +
+    `<tr><td style="padding:4px 8px 8px;">` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>` +
+    cell('累计购买金额', money(stats.purchaseAmount)) +
+    cell('购买次数', stats.purchaseCount + ' 次') +
+    `</tr><tr>` +
+    cell('累计中奖金额', money(stats.winAmount)) +
+    cell('中奖次数', stats.winCount + ' 注') +
+    `</tr></table></td></tr>` +
+    `<tr><td style="padding:0 16px 14px;font-size:11px;color:${C.faint};">` +
+    `固定奖金额累计（一/二等奖为浮动奖，未计入）· 净投入约 ¥${stats.net.toLocaleString('zh-CN')}（仅固定奖口径）` +
+    `</td></tr>` +
+    `</table></td></tr>`
+  );
+}
+
+module.exports = { C, GAME, esc, pad2, ball, ballRow, pickRow, gameHead, header, pageWrap, disclaimerFooter, statsBlock };

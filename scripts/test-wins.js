@@ -4,7 +4,8 @@
 
 const { fetchResults } = require('./results-lib');
 const { judge, tierOf } = require('./prize');
-const { checkType, buildWinEmail } = require('./check-wins');
+const { checkType, buildWinEmail, buildWinEmailHtml } = require('./check-wins');
+const { computeStats, formatStatsText } = require('./stats');
 
 function assert(cond, msg) {
   if (!cond) throw new Error('断言失败: ' + msg);
@@ -100,7 +101,34 @@ async function main() {
   console.log('  ----- 正文 -----');
   console.log(email.text.split('\n').map((l) => '  ' + l).join('\n'));
 
-  console.log('\n全部通过 ✅（本测试未发送邮件、未修改 picks-history.json）');
+  console.log('\n5) 累计购彩账本 computeStats（mini store 精确数值）');
+  const mini = {
+    records: [
+      // r1：已发送，双色球四等奖(200)+一等奖(浮动，只计数)+大乐透八等奖(15)
+      { id: 'r1', sent: true, result: { ssq: { wins: [{ tier: 4 }, { tier: 1 }] }, dlt: { wins: [{ tier: 8 }] } } },
+      // r2：已发送、未核对
+      { id: 'r2', sent: true, result: null },
+      // r3：sent:false（推送失败）→ 整条不计入
+      { id: 'r3', sent: false, result: { ssq: { wins: [{ tier: 6 }] } } },
+      // r4：历史记录无 sent 字段 → 视为已发送；双色球三等奖 3000
+      { id: 'r4', result: { ssq: { wins: [{ tier: 3 }] } } },
+    ],
+  };
+  const st = computeStats(mini);
+  assert(st.purchaseCount === 3, '购买次数 3（r1/r2/r4；r3 sent:false 不计）');
+  assert(st.purchaseAmount === 60, '购买金额 3×20=60');
+  assert(st.winCount === 4, '中奖次数 4（r1 三条 + r4 一条）');
+  assert(st.winAmount === 3215, '中奖金额 200+15+3000=3215（一等奖浮动奖不计金额）');
+  assert(st.net === -3155, '净投入 60-3215=-3155');
+  const st2 = computeStats(mini, 'r3');
+  assert(st2.purchaseCount === 4 && st2.winCount === 5, 'includeId 把当天未置 sent 的记录计入（4 次 / 5 注）');
+  const txt = formatStatsText(st);
+  assert(txt.includes('购买 3 次') && txt.includes('¥60') && txt.includes('中奖 4 注') && txt.includes('¥3,215'), 'formatStatsText 汇总行格式正确');
+  const email2 = buildWinEmail(newWins, st);
+  assert(email2.text.includes('累计购彩账本') && email2.text.includes('购买 3 次'), '中奖邮件正文含账本行');
+  const html2 = buildWinEmailHtml(newWins, st);
+  assert(html2.includes('累计购彩账本') && html2.includes('¥3,215'), '中奖邮件 HTML 含账本区块');
+    console.log('\n全部通过 ✅（本测试未发送邮件、未修改 picks-history.json）');
 }
 
 main().catch((e) => {

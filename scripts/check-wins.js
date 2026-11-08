@@ -8,9 +8,10 @@
 
 const { load, save } = require('./picks-store');
 const { fetchResults, firstDrawOnOrAfter } = require('./results-lib');
-const { judge } = require('./prize');
+const { judge, FIXED_PRIZE } = require('./prize');
 const { isConfigured, sendMail } = require('./mailer');
 const T = require('./email-template');
+const { computeStats, formatStatsText } = require('./stats');
 
 const META = {
   ssq: { name: '双色球', redLabel: '红球', blueLabel: '蓝球' },
@@ -36,7 +37,7 @@ function checkType(type, record, results) {
   };
 }
 
-function buildWinEmail(newWins) {
+function buildWinEmail(newWins, stats) {
   const lines = [];
   lines.push('好消息！你收到的机选推荐号码中，有号码中奖啦 🎉');
   lines.push('（以下为程序按官方开奖号码自动核对结果，实际兑奖请以官方为准）');
@@ -56,6 +57,10 @@ function buildWinEmail(newWins) {
     }
     lines.push('');
   }
+  if (stats) {
+    lines.push(formatStatsText(stats));
+    lines.push('');
+  }
   lines.push('—— 开运·彩票助手 自动核对推送。理性购彩，量力而行。');
   const totalWins = newWins.reduce((s, w) => s + w.typeWins.length, 0);
   return {
@@ -65,18 +70,14 @@ function buildWinEmail(newWins) {
 }
 
 // ---------- HTML 版面（金红夜宴） ----------
-// 奖级→固定奖金（用于徽章金额展示；浮动奖一二等不显示金额）
-const FIXED_PRIZE = {
-  ssq: { 3: '3,000', 4: '200', 5: '10', 6: '5' },
-  dlt: { 3: '10,000', 4: '3,000', 5: '300', 6: '200', 7: '100', 8: '15', 9: '5' },
-};
+// 奖级→固定奖金：prize.js 的 FIXED_PRIZE 为权威源（数字金额），徽章展示时千分位格式化
 
 function winBadge(type, tier, name) {
   const amount = (FIXED_PRIZE[type] || {})[tier];
   return (
     `<span style="display:inline-block;padding:4px 12px;background-color:${T.C.badgeBg};` +
     `color:${T.C.badgeText};border-radius:20px;font-size:13px;font-weight:700;white-space:nowrap;">` +
-    `${T.esc(name)}${amount ? ' ¥' + amount : ''}</span>`
+    `${T.esc(name)}${amount ? ' ¥' + Number(amount).toLocaleString('zh-CN') : ''}</span>`
   );
 }
 
@@ -119,7 +120,7 @@ function winCard(type, draw, typeWins) {
   );
 }
 
-function buildWinEmailHtml(newWins) {
+function buildWinEmailHtml(newWins, stats) {
   const totalWins = newWins.reduce((s, w) => s + w.typeWins.length, 0);
   // 合计奖金：只计固定奖级；一二等浮动奖不计入（显示“含浮动奖”）
   let fixedSum = 0;
@@ -157,7 +158,7 @@ function buildWinEmailHtml(newWins) {
     `</td></tr></table></td></tr>`;
 
   const inner =
-    hero + cards + tip +
+    hero + cards + tip + T.statsBlock(stats) +
     `<tr><td style="padding:16px 30px 26px;">` +
     `<div style="font-size:11px;color:${T.C.muted};line-height:1.7;">彩票开奖完全随机，本次中奖属于随机运气，不代表任何方法有效。请理性购彩、量力而行。</div>` +
     `<div style="padding-top:8px;font-size:11px;color:${T.C.faint};">开运·彩票助手 自动核对推送</div>` +
@@ -239,8 +240,10 @@ async function main() {
     return;
   }
   const winItems = [...toNotify.entries()].flatMap(([record, wins]) => wins);
-  const email = buildWinEmail(winItems);
-  email.html = buildWinEmailHtml(winItems);
+  // 累计购彩账本：核对结果已写回 store，统计覆盖全部已发送记录
+  const stats = computeStats(store);
+  const email = buildWinEmail(winItems, stats);
+  email.html = buildWinEmailHtml(winItems, stats);
   try {
     await sendMail({ subject: email.subject, text: email.text, html: email.html });
     toNotify.forEach((_, record) => { record.notified = true; });
