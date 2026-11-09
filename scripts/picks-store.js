@@ -60,10 +60,28 @@ function appendRecord(picks, dateStr) {
   return rec;
 }
 
-// 标记某条记录已成功发送邮件
-function markSent(rec) {
-  rec.sent = true;
-  save(load());
+// 在给定 store 中按 id 找到记录并置 sent:true；找到返回 true（纯内存操作，便于测试）
+function setSentFlag(store, recId) {
+  const target = store.records.find((r) => r.id === recId);
+  if (!target) return false;
+  target.sent = true;
+  return true;
 }
 
-module.exports = { STORE_PATH, load, save, appendRecord, markSent, beijingDate };
+// 标记某条记录已成功发送邮件
+// 注意：必须对「刚从磁盘 load 出来的那份数据」修改后再 save。
+// 早先写成 rec.sent = true; save(load()) —— 保存的是磁盘原数据（未修改），sent 永远写不进去，
+// 导致 GitHub Actions 每天落盘 sent:false 后再也标不上（2026-10-17 起 23 条记录全部 sent:false）。
+function markSent(rec) {
+  const store = load();
+  const ok = setSentFlag(store, rec && rec.id);
+  if (ok) {
+    save(store);
+    if (rec) rec.sent = true;
+  } else {
+    console.warn('[警告] markSent 未找到记录，sent 标记未写入: ' + (rec && rec.id));
+  }
+  return ok;
+}
+
+module.exports = { STORE_PATH, load, save, appendRecord, markSent, setSentFlag, beijingDate };

@@ -6,6 +6,7 @@ const { fetchResults } = require('./results-lib');
 const { judge, tierOf } = require('./prize');
 const { checkType, buildWinEmail, buildWinEmailHtml, daysSince, selectRetryables } = require('./check-wins');
 const { computeStats, formatStatsText } = require('./stats');
+const { setSentFlag } = require('./picks-store');
 
 function assert(cond, msg) {
   if (!cond) throw new Error('断言失败: ' + msg);
@@ -159,6 +160,12 @@ async function main() {
   const htmlOne = buildWinEmailHtml([newWins[0]], st);
   assert((htmlOne.match(/\u7b2c\s?\d+\s?\u671f/g) || []).length <= 1, 'HTML 只含本期期号');
 
+  console.log('\n7) sent 标记写盘（markSent 曾因 save(load()) 而失效）');
+  const storeForSent = { records: [{ id: 'a1', sent: false }, { id: 'a2', sent: false }] };
+  assert(setSentFlag(storeForSent, 'a1') === true, 'setSentFlag 命中记录返回 true');
+  assert(storeForSent.records[0].sent === true, '命中记录的 sent 被置 true');
+  assert(storeForSent.records[1].sent === false, '未命中的记录不受影响');
+  assert(setSentFlag(storeForSent, 'nope') === false, 'setSentFlag 未找到返回 false');
     console.log('\n全部通过 ✅（本测试未发送邮件、未修改 picks-history.json）');
 }
 

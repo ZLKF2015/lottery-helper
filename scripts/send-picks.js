@@ -45,8 +45,9 @@ async function main() {
   email.html = buildEmailHtml(email.picks, email.date, latest, stats);
 
   await sendMail({ subject: email.subject, text: email.text, html: email.html });
-  markSent(rec);
+  const marked = markSent(rec);
   console.log('已发送推送邮件 ->', email.subject);
+  if (!marked) console.warn('[警告] sent 标记未写入 picks-history.json（账本口径会漏算本次）');
 }
 
 main().catch((e) => {
