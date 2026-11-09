@@ -22577,7 +22577,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26127",
@@ -22592,6 +22592,22 @@
           "blue": [
             3,
             12
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26128",
+          "drawDate": "2026-11-08",
+          "red": [
+            5,
+            6,
+            10,
+            25,
+            27,
+            30
+          ],
+          "blue": [
+            11
           ],
           "wins": []
         }
@@ -22736,7 +22752,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26127",
@@ -22794,6 +22810,22 @@
               }
             }
           ]
+        },
+        "ssq": {
+          "issue": "26128",
+          "drawDate": "2026-11-08",
+          "red": [
+            5,
+            6,
+            10,
+            25,
+            27,
+            30
+          ],
+          "blue": [
+            11
+          ],
+          "wins": []
         }
       },
       "notified": true
@@ -22938,7 +22970,24 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26128",
+          "drawDate": "2026-11-08",
+          "red": [
+            5,
+            6,
+            10,
+            25,
+            27,
+            30
+          ],
+          "blue": [
+            11
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-09-mw84pfxq",
