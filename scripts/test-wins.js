@@ -4,7 +4,7 @@
 
 const { fetchResults } = require('./results-lib');
 const { judge, tierOf } = require('./prize');
-const { checkType, buildWinEmail, buildWinEmailHtml } = require('./check-wins');
+const { checkType, buildWinEmail, buildWinEmailHtml, daysSince, selectRetryables } = require('./check-wins');
 const { computeStats, formatStatsText } = require('./stats');
 
 function assert(cond, msg) {
@@ -128,6 +128,37 @@ async function main() {
   assert(email2.text.includes('累计购彩账本') && email2.text.includes('购买 3 次'), '中奖邮件正文含账本行');
   const html2 = buildWinEmailHtml(newWins, st);
   assert(html2.includes('累计购彩账本') && html2.includes('¥3,215'), '中奖邮件 HTML 含账本区块');
+  console.log('\n6) 中奖提醒范围：只报本次新增 + 短期失败重试');
+  assert(daysSince('2026-11-06', '2026-11-09') === 3, 'daysSince 正常差值');
+  assert(daysSince('2026-07-18', '2026-11-09') === 114, 'daysSince 跨月正确');
+  assert(daysSince('bad-date', '2026-11-09') === Infinity, 'daysSince 非法日期返回 Infinity');
+  const histStore = {
+    records: [
+      // 两个月前的旧中奖、从未标记 notified → 不应再补发
+      { id: 'old-win', date: '2026-07-18', checked: true, result: { ssq: { wins: [{ tier: 9 }] } } },
+      // 近 3 天内核对失败未通知 → 应补发
+      { id: 'recent-fail', date: '2026-11-08', checked: true, result: { dlt: { wins: [{ tier: 9 }] } } },
+      // 已通知成功 → 不再补发
+      { id: 'sent-ok', date: '2026-11-08', checked: true, notified: true, result: { ssq: { wins: [{ tier: 9 }] } } },
+      // 未核对 → 跳过
+      { id: 'no-check', date: '2026-11-08', checked: false, result: null },
+      // 已核对但未中奖 → 跳过
+      { id: 'recent-nowins', date: '2026-11-08', checked: true, result: { ssq: { wins: [] }, dlt: { wins: [] } } },
+      // 超出 3 天窗口（4 天前）→ 不补发
+      { id: 'edge-out', date: '2026-11-05', checked: true, result: { ssq: { wins: [{ tier: 9 }] } } },
+      // 正好 3 天前（窗口边界内）→ 补发
+      { id: 'edge-in', date: '2026-11-06', checked: true, result: { ssq: { wins: [{ tier: 9 }] } } },
+    ],
+  };
+  const sel = selectRetryables(histStore.records, '2026-11-09', 3);
+  assert(sel.length === 2, '只选中 2 条（recent-fail + edge-in）');
+  assert(sel.every((r) => r.id === 'recent-fail' || r.id === 'edge-in'), '历史旧中奖 old-win 与已通知 sent-ok 均被排除');
+  assert(!sel.some((r) => r.id === 'edge-out'), '4 天前超出窗口，不补发');
+  const emailOne = buildWinEmail([newWins[0]], st);
+  assert((emailOne.text.match(/======/g) || []).length === 2, '邮件只渲染传入的本次中奖（单个 header 行），不夹带历史');
+  const htmlOne = buildWinEmailHtml([newWins[0]], st);
+  assert((htmlOne.match(/\u7b2c\s?\d+\s?\u671f/g) || []).length <= 1, 'HTML 只含本期期号');
+
     console.log('\n全部通过 ✅（本测试未发送邮件、未修改 picks-history.json）');
 }
 

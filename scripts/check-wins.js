@@ -6,7 +6,7 @@
    数据源：gudaoxuri/lottery_history（raw.githubusercontent.com，云端可访问）。 */
 'use strict';
 
-const { load, save } = require('./picks-store');
+const { load, save, beijingDate } = require('./picks-store');
 const { fetchResults, firstDrawOnOrAfter } = require('./results-lib');
 const { judge, FIXED_PRIZE } = require('./prize');
 const { isConfigured, sendMail } = require('./mailer');
@@ -19,6 +19,25 @@ const META = {
 };
 
 const fmt = (arr) => arr.map((x) => String(x).padStart(2, '0')).join(' ');
+
+// 计算 dateStr（YYYY-MM-DD）距 today 相隔的天数；无效日期返回 Infinity
+function daysSince(dateStr, today) {
+  const a = Date.parse(String(dateStr) + 'T00:00:00Z');
+  const b = Date.parse(String(today) + 'T00:00:00Z');
+  if (!Number.isFinite(a) || !Number.isFinite(b)) return Infinity;
+  return Math.round((b - a) / 86400000);
+}
+
+// 挑选需要补发提醒的记录：已核对、有中奖、未通知成功，且推荐日在 windowDays 内
+function selectRetryables(records, today, windowDays) {
+  return records.filter((r) => {
+    if (!r.checked || r.notified === true) return false;
+    if (daysSince(r.date, today) > windowDays) return false;
+    return ['ssq', 'dlt'].some(
+      (t) => r.result && r.result[t] && Array.isArray(r.result[t].wins) && r.result[t].wins.length > 0
+    );
+  });
+}
 
 // 核对单条记录的某个彩种，返回 { resolved, wins:[] } 或 null（尚未开奖）
 function checkType(type, record, results) {
@@ -211,7 +230,8 @@ async function main() {
     console.log('本次没有新的开奖可核对。');
   }
 
-  // ---- 中奖提醒（可重试）：收集所有「有中奖但尚未成功通知」的记录（含上轮发送失败的）----
+  // ---- 中奖提醒：只报「本次扫描新判定的中奖」+ 极短期发送失败重试 ----
+  // 历史中奖不再重复列出（累计口径由账本 statsBlock 呈现），避免每期把旧中奖全翻一遍。
   const toNotify = new Map(); // record -> wins（跨彩种合并到一条记录）
   const collect = (w) => {
     const list = toNotify.get(w.record) || [];
@@ -219,16 +239,16 @@ async function main() {
     toNotify.set(w.record, list);
   };
   newWins.forEach(collect);
-  store.records.forEach((r) => {
-    if (r.checked && r.notified !== true) {
-      // 上轮已核对且有中奖结果、但从未成功发送提醒的记录，本轮补发
-      ['ssq', 'dlt'].forEach((type) => {
-        const res = r.result && r.result[type];
-        if (res && Array.isArray(res.wins) && res.wins.length > 0) {
-          collect({ type, record: r, draw: res, typeWins: res.wins });
-        }
-      });
-    }
+  // 仅对「最近 RETRY_WINDOW_DAYS 天内推荐、已核对有中奖、但通知失败」的记录补发
+  const RETRY_WINDOW_DAYS = 3;
+  const today = beijingDate();
+  selectRetryables(store.records, today, RETRY_WINDOW_DAYS).forEach((r) => {
+    ['ssq', 'dlt'].forEach((type) => {
+      const res = r.result && r.result[type];
+      if (res && Array.isArray(res.wins) && res.wins.length > 0) {
+        collect({ type, record: r, draw: res, typeWins: res.wins });
+      }
+    });
   });
 
   if (toNotify.size === 0) {
@@ -236,7 +256,7 @@ async function main() {
     return;
   }
   if (!isConfigured()) {
-    console.log('[提示] 检测到中奖，但 SMTP 未配置，无法发送中奖邮件。结果已保存，配置后下轮会补发提醒。');
+    console.log('[提示] 检测到中奖，但 SMTP 未配置，无法发送中奖邮件。结果已保存；配置后 3 天内的中奖会在下轮补发。');
     return;
   }
   const winItems = [...toNotify.entries()].flatMap(([record, wins]) => wins);
@@ -250,14 +270,14 @@ async function main() {
     save(store);
     console.log('已发送中奖提醒邮件 ->', email.subject);
   } catch (e) {
-    // 发送失败：不标记 notified，下轮运行会自动补发；核对结果已保存不受影响
+    // 发送失败：不标记 notified，3 天内下轮运行会自动补发；核对结果已保存不受影响
     console.error(`中奖提醒邮件发送失败（结果已保存，下轮将补发）: ${e.message}`);
     save(store);
     process.exitCode = 1;
   }
 }
 
-module.exports = { checkType, buildWinEmail, buildWinEmailHtml, main };
+module.exports = { checkType, buildWinEmail, buildWinEmailHtml, main, daysSince, selectRetryables };
 
 if (require.main === module) {
   main().catch((e) => {
