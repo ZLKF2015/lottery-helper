@@ -23144,7 +23144,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26128",
@@ -23159,6 +23159,22 @@
           "blue": [
             9,
             12
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26129",
+          "drawDate": "2026-11-10",
+          "red": [
+            3,
+            9,
+            16,
+            20,
+            25,
+            30
+          ],
+          "blue": [
+            5
           ],
           "wins": []
         }
@@ -23304,7 +23320,24 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26129",
+          "drawDate": "2026-11-10",
+          "red": [
+            3,
+            9,
+            16,
+            20,
+            25,
+            30
+          ],
+          "blue": [
+            5
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-11-mwb3bb9m",
