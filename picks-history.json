@@ -23319,7 +23319,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26129",
@@ -23336,8 +23336,46 @@
             5
           ],
           "wins": []
+        },
+        "dlt": {
+          "issue": "26129",
+          "drawDate": "2026-11-11",
+          "red": [
+            2,
+            12,
+            14,
+            17,
+            33
+          ],
+          "blue": [
+            7,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  14,
+                  15,
+                  20,
+                  33
+                ],
+                "blue": [
+                  6,
+                  7
+                ]
+              }
+            }
+          ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-11-mwb3bb9m",
@@ -23479,7 +23517,46 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26129",
+          "drawDate": "2026-11-11",
+          "red": [
+            2,
+            12,
+            14,
+            17,
+            33
+          ],
+          "blue": [
+            7,
+            8
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 0,
+              "blueMatch": 2,
+              "pick": {
+                "red": [
+                  3,
+                  5,
+                  18,
+                  28,
+                  30
+                ],
+                "blue": [
+                  7,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-12-mwciipbd",
