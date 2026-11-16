@@ -23888,7 +23888,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26130",
@@ -23903,6 +23903,22 @@
           "blue": [
             2,
             6
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26131",
+          "drawDate": "2026-11-15",
+          "red": [
+            1,
+            10,
+            19,
+            26,
+            31,
+            33
+          ],
+          "blue": [
+            15
           ],
           "wins": []
         }
@@ -24047,7 +24063,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26130",
@@ -24064,8 +24080,46 @@
             6
           ],
           "wins": []
+        },
+        "ssq": {
+          "issue": "26131",
+          "drawDate": "2026-11-15",
+          "red": [
+            1,
+            10,
+            19,
+            26,
+            31,
+            33
+          ],
+          "blue": [
+            15
+          ],
+          "wins": [
+            {
+              "idx": 2,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  13,
+                  15,
+                  23,
+                  25,
+                  31,
+                  32
+                ],
+                "blue": [
+                  15
+                ]
+              }
+            }
+          ]
         }
-      }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-15-mwgpelz3",
@@ -24207,7 +24261,24 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26131",
+          "drawDate": "2026-11-15",
+          "red": [
+            1,
+            10,
+            19,
+            26,
+            31,
+            33
+          ],
+          "blue": [
+            15
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-16-mwi6n5zq",
