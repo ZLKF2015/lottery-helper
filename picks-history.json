@@ -24807,7 +24807,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "dlt": {
           "issue": "26132",
@@ -24822,6 +24822,22 @@
           "blue": [
             6,
             11
+          ],
+          "wins": []
+        },
+        "ssq": {
+          "issue": "26133",
+          "drawDate": "2026-11-19",
+          "red": [
+            7,
+            10,
+            11,
+            14,
+            21,
+            26
+          ],
+          "blue": [
+            13
           ],
           "wins": []
         }
@@ -24967,7 +24983,66 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "ssq": {
+          "issue": "26133",
+          "drawDate": "2026-11-19",
+          "red": [
+            7,
+            10,
+            11,
+            14,
+            21,
+            26
+          ],
+          "blue": [
+            13
+          ],
+          "wins": [
+            {
+              "idx": 1,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  2,
+                  9,
+                  14,
+                  20,
+                  27,
+                  31
+                ],
+                "blue": [
+                  13
+                ]
+              }
+            },
+            {
+              "idx": 5,
+              "tier": 6,
+              "name": "六等奖",
+              "redMatch": 1,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  1,
+                  10,
+                  12,
+                  13,
+                  19,
+                  33
+                ],
+                "blue": [
+                  13
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-20-mwo0024s",
