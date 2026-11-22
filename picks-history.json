@@ -24982,7 +24982,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26133",
@@ -25040,6 +25040,22 @@
               }
             }
           ]
+        },
+        "dlt": {
+          "issue": "26133",
+          "drawDate": "2026-11-21",
+          "red": [
+            10,
+            11,
+            25,
+            30,
+            32
+          ],
+          "blue": [
+            9,
+            10
+          ],
+          "wins": []
         }
       },
       "notified": true
@@ -25184,7 +25200,24 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26133",
+          "drawDate": "2026-11-21",
+          "red": [
+            10,
+            11,
+            25,
+            30,
+            32
+          ],
+          "blue": [
+            9,
+            10
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-21-mwpeeu2t",
@@ -25326,7 +25359,24 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26133",
+          "drawDate": "2026-11-21",
+          "red": [
+            10,
+            11,
+            25,
+            30,
+            32
+          ],
+          "blue": [
+            9,
+            10
+          ],
+          "wins": []
+        }
+      }
     },
     {
       "id": "2026-11-22-mwqrwfk4",
