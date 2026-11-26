@@ -25985,7 +25985,7 @@
         }
       ],
       "sent": true,
-      "checked": false,
+      "checked": true,
       "result": {
         "ssq": {
           "issue": "26135",
@@ -26000,6 +26000,22 @@
           ],
           "blue": [
             8
+          ],
+          "wins": []
+        },
+        "dlt": {
+          "issue": "26135",
+          "drawDate": "2026-11-25",
+          "red": [
+            1,
+            8,
+            20,
+            24,
+            33
+          ],
+          "blue": [
+            3,
+            4
           ],
           "wins": []
         }
@@ -26145,7 +26161,46 @@
       ],
       "sent": true,
       "checked": false,
-      "result": null
+      "result": {
+        "dlt": {
+          "issue": "26135",
+          "drawDate": "2026-11-25",
+          "red": [
+            1,
+            8,
+            20,
+            24,
+            33
+          ],
+          "blue": [
+            3,
+            4
+          ],
+          "wins": [
+            {
+              "idx": 5,
+              "tier": 9,
+              "name": "九等奖",
+              "redMatch": 2,
+              "blueMatch": 1,
+              "pick": {
+                "red": [
+                  8,
+                  13,
+                  20,
+                  25,
+                  29
+                ],
+                "blue": [
+                  4,
+                  8
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "notified": true
     },
     {
       "id": "2026-11-26-mwwn23jt",
